@@ -80,29 +80,29 @@
       "date_or_version": "2016–2020 case timelines; registry 2026-08-27",
       "applicable_scope": "Conceptual positioning reference only; not for quantitative recomputation",
       "license_or_reuse_boundary": "Public-source aggregate; reuse for benchmark narrative, not as authority for precise metrics",
-      "verification_status": "needs-review — published outcomes are publicly disclosed averages; raw data not independently verified"
+      "verification_status": "downgraded — case outcomes are publicly disclosed averages; precise URLs and raw data not independently verified; used as conceptual positioning reference only, not for quantitative recomputation"
     },
     {
       "id": "RENT-RANGE",
       "source_type": "public_market_reference",
-      "usage": "Rent range 5–6 元/㎡/天 (Zhongguancun corridor) and 8.6 元/㎡/天 (Dazhongsi commercial) referenced as conceptual market anchors.",
+      "usage": "Rent range referenced as conceptual market anchor (precise values removed; qualitative only).",
       "publisher": "Public real-estate market reports (aggregate)",
       "url_or_path": "To be supplemented by professional team from publicly available market reports",
       "date_or_version": "Conceptual reference as of 2026-08-27",
       "applicable_scope": "Concept-stage market anchor; not an appraisal or transaction evidence",
       "license_or_reuse_boundary": "Conceptual assumption; downgrade or delete if unverifiable",
-      "verification_status": "needs-review — precise rent figures not independently verified; treat as conceptual hypothesis pending professional appraisal"
+      "verification_status": "downgraded — precise rent figures removed; treated as qualitative market hypothesis pending professional appraisal"
     },
     {
       "id": "PRICE-DECLINE",
       "source_type": "public_market_reference",
-      "usage": "~14.8% price decline figure referenced as down-cycle context for investment-driven leasing strategy.",
+      "usage": "Market down-cycle context referenced for investment-driven leasing strategy (precise percentage removed; qualitative only).",
       "publisher": "Public market-cycle reports (aggregate)",
       "url_or_path": "To be supplemented by professional team",
       "date_or_version": "Conceptual reference as of 2026-08-27",
       "applicable_scope": "Cycle-context justification only; not a forecast or transaction evidence",
       "license_or_reuse_boundary": "Conceptual hypothesis; downgrade to qualitative if unverifiable",
-      "verification_status": "needs-review — precise 14.8% figure not independently verified; treat as conceptual hypothesis pending professional data"
+      "verification_status": "downgraded — precise 14.8% figure removed; treated as qualitative cycle-context hypothesis pending professional data"
     },
     {
       "id": "CHISWICK-EVENTS",
@@ -113,18 +113,51 @@
       "date_or_version": "Operational since 2001; reference 2026-08-27",
       "applicable_scope": "Event-brand operational model reference; not for direct replication claims",
       "license_or_reuse_boundary": "Public corporate materials; reuse for benchmark narrative",
-      "verification_status": "needs-review — ~100 events/year is publicly disclosed; precise annual count not independently audited"
+      "verification_status": "downgraded — ~100 events/year is a public corporate claim from enjoy-work.com; precise annual count not independently audited; used as event-brand operational model reference only"
     },
     {
       "id": "M1M2-DUAL-CONTROL",
-      "source_type": "official_public",
+      "source_type": "public_aggregate_reference",
       "usage": "M1/M2 supporting facilities dual control (land ≤7% and FAR ≤15%), no residential/hotels/training centers, self-owned commercial supporting.",
       "publisher": "Beijing industrial-land regulatory framework (aggregate)",
       "url_or_path": "To be confirmed against specific Beijing industrial-land redline documents",
       "date_or_version": "Conceptual compliance reference as of 2026-08-27",
       "applicable_scope": "Concept-stage compliance boundary; not a project-level approval",
       "license_or_reuse_boundary": "Reference for compliance narrative; not an authority for project approval",
-      "verification_status": "needs-review — project-level formal basis not yet obtained; downgrade to proposed strategy if not confirmed"
+      "verification_status": "downgraded — project-level formal basis not yet obtained; treated as proposed strategy, not an authority for project approval"
+    },
+    {
+      "id": "FONT-NOTO-SANS-SC",
+      "source_type": "web_font_external",
+      "usage": "Noto Sans SC (Google Fonts) loaded via @import in report/proposal.html and visual/index.html for CJK rendering; prevents missing-character boxes.",
+      "publisher": "Google Inc. / Google Fonts",
+      "url_or_path": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap",
+      "date_or_version": "Accessed 2026-08-28; Google Fonts API serves latest version",
+      "applicable_scope": "Web font for HTML rendering only; not bundled in submission package",
+      "license_or_reuse_boundary": "Open Font License (OFL); loaded from Google Fonts CDN at runtime; not embedded or redistributed in submission package; compliant with OFL terms",
+      "verification_status": "confirmed — web font loaded from Google Fonts CDN; OFL licensed; not bundled in package"
+    },
+    {
+      "id": "FONT-MSYH",
+      "source_type": "system_font",
+      "usage": "Microsoft YaHei (msyh.ttc) used in PDF generation via reportlab/PIL for CJK rendering in drawings/a0-boards.pdf, a3-booklet.pdf and figures.",
+      "publisher": "Microsoft Corporation",
+      "url_or_path": "C:\\Windows\\Fonts\\msyh.ttc (system-installed on author's Windows host; not redistributed with submission)",
+      "date_or_version": "System-installed; version varies by Windows update",
+      "applicable_scope": "PDF/PNG generation on author's local Windows host only; not embedded in output files or bundled in submission package",
+      "license_or_reuse_boundary": "System font; rendering only on Windows host; not embedded in PDF or redistributed with submission; compliant with system font usage",
+      "verification_status": "confirmed — system font, not bundled in submission package"
+    },
+    {
+      "id": "IMAGES-GENERATED",
+      "source_type": "author_generated",
+      "usage": "All 10 PNG figures (site-overview, land-use-structure, key-areas, mobility-bluegreen, metrics-evidence x ZH/EN) and 4 PDFs (a0-boards, a3-booklet x ZH/EN) generated by author using Python (PIL, matplotlib, reportlab) from submission's own metrics.json and geometry GeoJSON data.",
+      "publisher": "Author (MIMConsult/jingzhang-ai-symbiotic-belt participant)",
+      "url_or_path": "assets/figures/*.png, drawings/*.pdf (local generation; no external image sources)",
+      "date_or_version": "Generated 2026-08-28",
+      "applicable_scope": "All static figures and PDF drawings in submission",
+      "license_or_reuse_boundary": "Author-generated original work; no third-party images, icons, or map basemaps used; geometry data derived from submission's own GeoJSON files; all text content authored by participant",
+      "verification_status": "confirmed — all figures and PDFs are author-generated originals; no external image assets, icons, or map tiles used"
     }
   ]
 }
