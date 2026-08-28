@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "assumptions": [
+    {
+      "id": "A-CONTROLS-001",
+      "status": "pending_professional_confirmation",
+      "statement": "Detailed regulatory controls, road redlines, ownership, municipal utilities, and engineering constraints must be confirmed from official attachments before statutory use.",
+      "impact": "The package can be reviewed as a formal AI submission only for provided official boundaries and submitted design layers; statutory controls still need professional confirmation."
+    },
+    {
+      "id": "A-PROV-BOUNDARY-002",
+      "status": "accepted_provisional_but_must_recalc_when_official",
+      "statement": "All submitted polygons (site_boundary, key_areas, land_use, buildings, roads, green_space, public_space, phasing) use SRC-PROVISIONAL-BOUNDARIES-2026 with official_boundary=false.",
+      "impact": "Areas, ratios, and counts are indicative only; must be recalculated after official SITE_BOUNDARY and KEY_AREA polygons are published."
+    },
+    {
+      "id": "A-DESIGN-CONTENT-003",
+      "status": "accepted_user_provided_design_integrated",
+      "statement": "The '一核·两轴·三带·四组团' spatial structure and narrative design content originate from the user-provided haidian_design.md and have been integrated into proposal.md.",
+      "impact": "Design concept is author-derived; professional review should validate planning rationale against official controls."
+    },
+    {
+      "id": "A-AI-SCENARIOS-004",
+      "status": "accepted_pending_operational_validation",
+      "statement": "AI scenarios (ai-traffic-walkability, enterprise-service-copilot, public-safety-operations-review) are mapped to agent_taskbook scenarios but lack operational pilots.",
+      "impact": "Scenario feasibility is conceptual; deployment requires validation with district data partners."
+    },
+    {
+      "id": "A-BILINGUAL-005",
+      "status": "accepted_translation_contract",
+      "statement": "proposal.en.md is generated as bilingual contract version 1 with structural alignment to proposal.md; technical terms retain Chinese context where needed.",
+      "impact": "Translation fidelity is structural, not literal; professional review should verify key planning terms."
+    },
+    {
+      "id": "A-DRAWINGS-PLACEHOLDER-006",
+      "status": "replaced_with_substantive_drawings",
+      "statement": "drawings/a3-booklet.pdf and drawings/a0-boards.pdf have been regenerated with substantive bilingual design content (overview map, three key-area designs, scenario cards, component/wayfinding, phasing & responsibility) via scripts/regen_drawings_pdf.py, replacing the scaffold placeholders; a3 and a0 no longer share the same sha256.",
+      "impact": "Drawings now carry substantive content for review; geometry remains provisional pending official SITE_BOUNDARY/KEY_AREA polygons. manifest.json sha256 must be recomputed to match."
+    },
+    {
+      "id": "A-BUILDING-CADASTRAL-007",
+      "status": "pending_official_cadastral_data",
+      "statement": "buildings.geojson footprints are indicative massing derived from provisional boundary partitioning, not from official cadastral or planning-approved building data.",
+      "impact": "Building footprint area (310807.184 sqm) and derived FAR are indicative only; must be recalculated against official building stock."
+    }
+  ]
+}

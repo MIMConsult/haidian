@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SITE-PACKAGE",
+      "path": "brief/site-package/",
+      "source_type": "official_public",
+      "usage": "Project brief, enums, allowed design space, ranges, and schemas."
+    },
+    {
+      "id": "SOURCE-REGISTRY",
+      "path": "data/source_registry.json",
+      "source_type": "repository_public_registry",
+      "usage": "Public/cleared/provisional source usability registry; distinguishes formal-ready, background-only, provisional-only, and needs-review materials."
+    },
+    {
+      "id": "PROCESSED-FACT-PACK",
+      "path": "data/processed/agent_fact_pack.md",
+      "source_type": "repository_processed_reference",
+      "usage": "Agent-readable navigation layer for scopes, required tasks, source-use boundaries, and missing-data checklist; not a new authority source."
+    },
+    {
+      "id": "BOUNDARY-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Submitted site boundary geometry source (provisional).",
+      "source_id_reference": "SRC-PROVISIONAL-BOUNDARIES-2026",
+      "usability_notice_zh": "provisional_constraint，official_boundary=false；满足百年京张 AI 创新带公告统一边界条款用于 formal 内容评审；所有面积、比例、分期范围类结论需在官方 polygon 发布后按 metrics.json 内 4 步 provisional_recalc_path 复算。"
+    },
+    {
+      "id": "KEY-AREA-SOURCE",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Three required detailed-design key area boundaries (provisional).",
+      "source_id_reference": "SRC-PROVISIONAL-BOUNDARIES-2026",
+      "usability_notice_zh": "众智园 / 北京 AI 原点社区 / 大钟寺 三处重点区 provisional polygon；深度项与 compliance_matrix 已按 368.4 公顷范围落图，但精确坐标与法定红线需官方发布后确认。"
+    },
+    {
+      "id": "OFFICIAL-ANNOUNCEMENT",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/tzgg/hd/202605/t20260509_4643047.html",
+      "source_type": "official_public",
+      "usage": "Official announcement tasks, scope levels, key areas, language, and deliverable context."
+    },
+    {
+      "id": "AGENT-TASKBOOK",
+      "path": "brief/site-package/agent_taskbook.json",
+      "source_type": "user_provided_cleared",
+      "usage": "Agent-facing open-call principles, six required agent tasks, scenario/branding/operation requirements, and boundary clause."
+    },
+    {
+      "id": "SRC-PROVISIONAL-BOUNDARIES-2026",
+      "path": "brief/site-package/geometry/provisional_boundaries.geojson",
+      "source_type": "agent_inferred_from_public_data",
+      "usage": "Provisional site boundary and three key area polygons (official_boundary=false); used for formal-stage geometry until official redline is published."
+    },
+    {
+      "id": "MOHURD-URBAN-DESIGN-MEASURES",
+      "url": "https://www.mohurd.gov.cn",
+      "source_type": "official_public",
+      "usage": "Ministry of Housing and Urban-Rural Development urban design measures; referenced in standards.json for regulatory depth and review framework."
+    },
+    {
+      "id": "STANDARDS-REGISTRY",
+      "path": "data/standards.json",
+      "source_type": "repository_public_registry",
+      "usage": "Registered mandatory and recommended standards (9 entries) mapped in standard_matrix.json for compliance tracing."
+    },
+    {
+      "id": "USER-DESIGN-INPUT",
+      "path": "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/proposal.md",
+      "source_type": "user_provided_cleared",
+      "usage": "Author-provided haidian_design.md content (一核·两轴·三带·四组团) integrated into proposal.md narrative."
+    },
+    {
+      "id": "CASE-BENCHMARK",
+      "source_type": "public_aggregate_reference",
+      "usage": "8-case benchmark table outcomes (Hangzhou City Brain / Xiongan Twin / Shanghai Zhangjiang / Haidian City Brain / Shenzhen Pengcheng / Hefei Speech Valley / London Chiswick / Guangzhou Nansha).",
+      "publisher": "Multiple official / corporate portals and press releases",
+      "url_or_path": "Per-case URLs listed in proposal.md case-benchmark subsection notes",
+      "date_or_version": "2016–2020 case timelines; registry 2026-08-27",
+      "applicable_scope": "Conceptual positioning reference only; not for quantitative recomputation",
+      "license_or_reuse_boundary": "Public-source aggregate; reuse for benchmark narrative, not as authority for precise metrics",
+      "verification_status": "needs-review — published outcomes are publicly disclosed averages; raw data not independently verified"
+    },
+    {
+      "id": "RENT-RANGE",
+      "source_type": "public_market_reference",
+      "usage": "Rent range 5–6 元/㎡/天 (Zhongguancun corridor) and 8.6 元/㎡/天 (Dazhongsi commercial) referenced as conceptual market anchors.",
+      "publisher": "Public real-estate market reports (aggregate)",
+      "url_or_path": "To be supplemented by professional team from publicly available market reports",
+      "date_or_version": "Conceptual reference as of 2026-08-27",
+      "applicable_scope": "Concept-stage market anchor; not an appraisal or transaction evidence",
+      "license_or_reuse_boundary": "Conceptual assumption; downgrade or delete if unverifiable",
+      "verification_status": "needs-review — precise rent figures not independently verified; treat as conceptual hypothesis pending professional appraisal"
+    },
+    {
+      "id": "PRICE-DECLINE",
+      "source_type": "public_market_reference",
+      "usage": "~14.8% price decline figure referenced as down-cycle context for investment-driven leasing strategy.",
+      "publisher": "Public market-cycle reports (aggregate)",
+      "url_or_path": "To be supplemented by professional team",
+      "date_or_version": "Conceptual reference as of 2026-08-27",
+      "applicable_scope": "Cycle-context justification only; not a forecast or transaction evidence",
+      "license_or_reuse_boundary": "Conceptual hypothesis; downgrade to qualitative if unverifiable",
+      "verification_status": "needs-review — precise 14.8% figure not independently verified; treat as conceptual hypothesis pending professional data"
+    },
+    {
+      "id": "CHISWICK-EVENTS",
+      "source_type": "public_corporate_reference",
+      "usage": "London Chiswick Park ~100 events/year as event-brand benchmark reference.",
+      "publisher": "Chiswick Park official / Enjoy-Work brand public materials",
+      "url_or_path": "https://www.enjoy-work.com / public corporate press materials",
+      "date_or_version": "Operational since 2001; reference 2026-08-27",
+      "applicable_scope": "Event-brand operational model reference; not for direct replication claims",
+      "license_or_reuse_boundary": "Public corporate materials; reuse for benchmark narrative",
+      "verification_status": "needs-review — ~100 events/year is publicly disclosed; precise annual count not independently audited"
+    },
+    {
+      "id": "M1M2-DUAL-CONTROL",
+      "source_type": "official_public",
+      "usage": "M1/M2 supporting facilities dual control (land ≤7% and FAR ≤15%), no residential/hotels/training centers, self-owned commercial supporting.",
+      "publisher": "Beijing industrial-land regulatory framework (aggregate)",
+      "url_or_path": "To be confirmed against specific Beijing industrial-land redline documents",
+      "date_or_version": "Conceptual compliance reference as of 2026-08-27",
+      "applicable_scope": "Concept-stage compliance boundary; not a project-level approval",
+      "license_or_reuse_boundary": "Reference for compliance narrative; not an authority for project approval",
+      "verification_status": "needs-review — project-level formal basis not yet obtained; downgrade to proposed strategy if not confirmed"
+    }
+  ]
+}

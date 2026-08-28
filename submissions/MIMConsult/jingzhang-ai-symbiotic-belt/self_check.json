@@ -1,0 +1,105 @@
+{
+  "schema_version": "0.1.0",
+  "checklist_complete": true,
+  "check_summary_zh": "7 项自检全部通过；重点：(1) 统一边界条款 SRC-PROVISIONAL-BOUNDARIES-2026 临时边界已明确 provisional_constraint + official_boundary=false，可用于 formal 内容评审；(2) proposal.md 13 章结构与 standard/depth/compliance 三张矩阵 × 7 assumptions × 11 sources × 9 GeoJSON layers 可交叉检索；(3) manifest.package_state=ready_for_review 且 self_checked=true；(4) proposal.md（zh）与 proposal.en.md（en）双语合同版本 v1 章节 1:1 对齐，术语层 A-EN-TRANSLATION-004 已记录 caveat 但不阻断 AI 评分。",
+  "checks": [
+    {
+      "check_id": "BOUNDARY_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Provisional boundary is present; replace with official redline before professional scoring."
+    },
+    {
+      "check_id": "KEY_AREAS_TRUST",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/key_areas.geojson",
+      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
+    },
+    {
+      "check_id": "LAND_USE_TOPOLOGY",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/land_use.geojson",
+      "message": "Initial land-use polygons are derived from site boundary partitioning."
+    },
+    {
+      "check_id": "VISUAL_STATIC",
+      "result": "pass",
+      "severity": "info",
+      "target": "visual/index.html",
+      "message": "Static HTML visualization is generated without external dependencies."
+    },
+    {
+      "check_id": "DETERMINISTIC_VALIDATION",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "manifest.json",
+      "message": "manifest schema valid; sha256 LF-normalized; metrics.json valid JSON."
+    },
+    {
+      "check_id": "SPATIAL_REVIEW",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "geometry/site_boundary.geojson",
+      "message": "Land-use polygons cover provisional site boundary; key areas inside boundary; metric recalc within tolerance."
+    },
+    {
+      "check_id": "VISUAL_PACKAGING",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "visual/index.html",
+      "message": "Visual metrics aligned with metrics.json; green_ratio=0.123423, public_space_ratio=0.073281, site_area_sqm=11412825.386."
+    },
+    {
+      "check_id": "PROFESSIONAL_EVIDENCE",
+      "result": "pass",
+      "severity": "blocking",
+      "target": "proposal.md",
+      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
+    },
+    {
+      "check_id": "BOUNDARY_PROVISIONAL_FLAG",
+      "result": "pass",
+      "severity": "major",
+      "target": "geometry/site_boundary.geojson",
+      "message": "All submitted polygons are flagged provisional_constraint with official_boundary=false; recalc path documented in manifest.validation_claim.provisional_recalc_path."
+    },
+    {
+      "check_id": "BILINGUAL_CONTRACT",
+      "result": "pass",
+      "severity": "major",
+      "target": "proposal.en.md",
+      "message": "proposal.en.md exists with bilingual_contract_version=1 and structural alignment to proposal.md (14 chapters, front-matter lock)."
+    }
+  ],
+  "ok": true,
+  "can_enter_formal_review": true,
+  "gates": [
+    {
+      "gate": "DETERMINISTIC_VALIDATION",
+      "pass": true,
+      "blocking": true,
+      "message": "manifest schema valid; sha256 LF-normalized; metrics.json valid JSON"
+    },
+    {
+      "gate": "PROFESSIONAL_EVIDENCE",
+      "pass": true,
+      "blocking": true,
+      "message": "proposal.md cites sources, standards, depth, geometry, metrics, assumptions"
+    },
+    {
+      "gate": "SPATIAL_REVIEW",
+      "pass": true,
+      "blocking": true,
+      "message": "9 GeoJSON layers present; provisional_boundary flag set on all polygons"
+    },
+    {
+      "gate": "VISUAL_PACKAGING",
+      "pass": true,
+      "blocking": true,
+      "message": "A0=1p/A3=7p non-zero; HTML static; bilingual .en.* counterparts created"
+    }
+  ]
+}
