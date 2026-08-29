@@ -25,7 +25,7 @@ scenarios: ["ai-traffic-walkability", "enterprise-service-copilot", "public-safe
 
 ## 三层范围工作框架
 
-按公告 1.3/1.4/1.5 三层范围组织工作框架：统筹研究范围 43.6 km²（产业生态与战略定位）→ 总体设计范围 11.4 km²（城市更新与控规深度城市设计）→ 重点区域 368.4 公顷三处（详细设计）。三层任务映射见 `compliance_matrix.json` [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]，空间证据见 `geometry/site_boundary.geojson` [data:geometry/site_boundary.geojson#SITE-001] 与 `geometry/key_areas.geojson` [data:geometry/key_areas.geojson#PROV-KEY-001]。指标复算入口见 [metric:site_area_sqm] 与 [metric:key_area_count]。设计意图：通过三层范围将战略定位、空间框架、详细设计三个层级的任务与证据逐一对应，避免概念空转；几何与指标 Implications 为所有结论必须可从 GeoJSON 复算，不可复算者标 `status=unknown`；数据缺口为官方 boundary 与 key areas 尚未取得，替换后须全量重算 [depth:three_level_scope_framework] [source:OFFICIAL-ANNOUNCEMENT]。
+按公告 1.3/1.4/1.5 三层范围组织工作框架：统筹研究范围 43.6 km²（产业生态与战略定位）→ 总体设计范围 11.4 km²（城市更新与控规深度城市设计）→ 重点区域三处合计 368.4 公顷（详细设计）。三层任务映射见 `compliance_matrix.json` [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]，空间证据见 `geometry/site_boundary.geojson` [data:geometry/site_boundary.geojson#SITE-001] 与 `geometry/key_areas.geojson` [data:geometry/key_areas.geojson#PROV-KEY-001]。指标复算入口见 [metric:site_area_sqm] 与 [metric:key_area_count]。设计意图：通过三层范围将战略定位、空间框架、详细设计三个层级的任务与证据逐一对应，避免概念空转；几何与指标 Implications 为所有结论必须可从 GeoJSON 复算，不可复算者标 `status=unknown`；数据缺口为官方 boundary 与 key areas 尚未取得，替换后须全量重算 [depth:three_level_scope_framework] [source:OFFICIAL-ANNOUNCEMENT]。
 
 ## 统筹研究范围产业与未来城市研究
 
@@ -141,7 +141,7 @@ AI 创新生态图谱以开源城市实验室为枢纽，串联七类利益相�
 
 **二级·街区级**：覆盖总体设计范围 11.4 km² 三核三翼，载体为半透光伏雨棚+街区入口标识；含街区主题故事、商户地图、AI 场景卡入口；多语含中英日韩。责任矩阵 M1-M2 由街区联盟主负责 [source:OFFICIAL-ANNOUNCEMENT]。
 
-**三级·节点级**：覆盖重点区域 368.4 公顷节点，载体为遗产信息锚点+AI 互动装置+开放 API 接入柱；含节点故事二维码、AR 锚点、无障碍语音导航、适老化大字与儿童友好图标。责任矩阵 M2-M3 由属地街道办+开源实验室共负责 [depth:cultural_wayfinding_hierarchy]。
+**三级·节点级**：覆盖重点区域 （三处合计 368.4 公顷）节点，载体为遗产信息锚点+AI 互动装置+开放 API 接入柱；含节点故事二维码、AR 锚点、无障碍语音导航、适老化大字与儿童友好图标。责任矩阵 M2-M3 由属地街道办+开源实验室共负责 [depth:cultural_wayfinding_hierarchy]。
 
 设计意图：三级递进让文化导视不集中堆叠在遗产节点而是从场地入口就开始叙事，与 AI 场景卡触点街区一一对应；几何 Implications 为三级导视节点须交叉写入 `geometry/public_space.geojson` [data:geometry/public_space.geojson#PUBLIC-001]；数据缺口为多语文化表述与文保视线需人工复核通道 [source:OFFICIAL-ANNOUNCEMENT]。
 
@@ -173,7 +173,7 @@ AI 创新生态图谱以开源城市实验室为枢纽，串联七类利益相�
 > 每条抓手同时回答：**场地现存矛盾 + 落地手段 + 建成结果**，不空喊口号。
 
 **抓手1：铁路遗产骨架化——以京张遗址廊道为公共主脉，AI 嵌入而非替代遗产风貌**
-- 解决问题：京张遗址带被环路、权属墙、地下通道反复切分，"只有景观走廊，没有功能主轴"；AI 产业空间与遗产互斥（科技园区常新建玻璃盒子，遗址仅做怀旧观光），两段叙事彼此游离。
+- 解决问题：设计假设（现状痛点待基线调研核验）：京张遗址带疑似被环路、权属界面、地下通道等要素反复切分，"只有景观走廊，没有功能主轴"；AI 产业空间与遗产互斥（科技园区常新建玻璃盒子，遗址仅做怀旧观光），两段叙事彼此游离。
 - 实施手段：不做大拆大建，9 km 遗址带维持"铁轨+林荫+缓坡"的遗产基底；把开发者步道、AR 锚点、端侧算力节点、开源荣誉铭刻**嵌入旧铁轨枕木之间与桥下灰空间**；概念目标：所有新建 AI 载体高度 ≤ 周边树冠线（该高度控制为概念假设，需基于现状树体实测、文保视线分析与专业复核确定，不得据此施工或审批），材质以锈蚀耐候钢 + 再生枕木 + 半透光伏为主，不压过铁轨本体。
 - 预期结果：从"看一眼就走的纪念带"变成"每天都能用的 AI 主街"；概念目标：沿线步行约 500 m 半径内设一处 AI 互动节点 + 一处遗产解说点（该间距为概念假设，需基于实际断点流量、慢行时间基线与无障碍路径核实，待官方控规与现状测绘后重标） [depth:walkability_accessibility_strategy]。文化朝圣地与 AI 体验带在同一空间图层共生。
 
@@ -195,7 +195,7 @@ AI 创新生态图谱以开源城市实验室为枢纽，串联七类利益相�
 
 **三大定位**：① 百年京张 AI 文化带（铁路遗产骨架化，AI 嵌入不替代风貌）；② AI 融合创新带（开源城市实验室，全栈硬科技可落地可测试）；③ 青年友好 AI 生活带（产学研城缝合，一人公司 / 数字游民城市客厅）。
 
-**三层范围（公告硬性要求）**：统筹研究 43.6 km²（生态 + 战略）→ 总体设计 11.4 km²（更新框架 + 产业布局 + 交通市政）→ 重点区域 368.4 公顷三处（详细设计），任务映射见 `compliance_matrix.json` [depth:three_level_scope_framework] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。所有结论必须可从 GeoJSON 复算。
+**三层范围（公告硬性要求）**：统筹研究 43.6 km²（生态 + 战略）→ 总体设计 11.4 km²（更新框架 + 产业布局 + 交通市政）→ 重点区域三处合计 368.4 公顷（详细设计），任务映射见 `compliance_matrix.json` [depth:three_level_scope_framework] [standard:PROJECT-OFFICIAL-ANNOUNCEMENT]。所有结论必须可从 GeoJSON 复算。
 
 **命名与视觉体系**："前缀 + 功能"命名树确保全域辨识度；人字轨拓扑为 Logo 母题（从詹天佑人字形工程到 AI 节点网络）；色彩方向（概念）：铁轨赭石 + 中关村蓝绿 + 高亮霓虹；不使用未清权素材。
 

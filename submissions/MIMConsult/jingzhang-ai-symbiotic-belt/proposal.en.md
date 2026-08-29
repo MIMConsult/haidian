@@ -68,7 +68,7 @@ Data gap statement: Official `SITE_BOUNDARY` and three `KEY_AREA` polygons are n
 
 ## Industry Ecosystem Strategy: Basic Research → Incubation → Capital Full Chain
 
-> Belongs to Pillar 2 (Industry-University-City Suture): Solves the problem of "university research stuck behind campus gates for years before reaching the market"; provides the institutional and spatial infrastructure of the industry chain.
+> Belongs to Pillar 2 (Industry-University-City Suture): Solves the problem of "long, block-disconnected university tech-transfer cycles (design assumption)"; provides the institutional and spatial infrastructure of the industry chain.
 
 **Three-Core Closed-Loop Model**: R&D Source Point (AI Origin Community) → Global Exit Strategy (Zhongzhiyuan) → Commercial Monetization (Dazhongsi). The Zhongguancun Technology Service West Wing injects capital, IP, and globalization services. The Xiaoyue River Scenario Empowerment East Wing focuses on embodied intelligence and AI consumption experiences — a "west input, east use" synergy pattern [source:AGENT-TASKBOOK] [standard:PROJECT-AGENT-OPEN-CALL-TASKBOOK].
 
@@ -140,7 +140,7 @@ The cultural wayfinding system is organized in three tiers so heritage narrative
 
 **Tier 2 · Block level**: Covers the 11.4 km² Overall Design scope three cores and two wings; carriers are semi-transparent PV canopies + block-entrance markers; includes block-theme stories, merchant maps, and AI scenario-card entries; quadrilingual (CN/EN/JP/KO). Responsibility matrix M1–M2 led by Block Alliance [source:OFFICIAL-ANNOUNCEMENT].
 
-**Tier 3 · Node level**: Covers the 368.4 ha key-area nodes; carriers are heritage info anchors + AI interactive installations + open-API access columns; includes node-story QR codes, AR anchors, accessible voice navigation, silver-age large-font, and child-friendly icons. Responsibility matrix M2–M3 co-led by Sub-district Office + Open-Source Lab [depth:cultural_wayfinding_hierarchy].
+**Tier 3 · Node level**: Covers the key-area nodes (368.4 ha total across three sites); carriers are heritage info anchors + AI interactive installations + open-API access columns; includes node-story QR codes, AR anchors, accessible voice navigation, silver-age large-font, and child-friendly icons. Responsibility matrix M2–M3 co-led by Sub-district Office + Open-Source Lab [depth:cultural_wayfinding_hierarchy].
 
 Design intent: Three-tier progression prevents wayfinding from piling up at heritage nodes — narrative starts at the site entrance and corresponds one-to-one with AI scenario-card touchpoint blocks; geometric Implications — tier markers must cross-write into `geometry/public_space.geojson` [data:geometry/public_space.geojson#PUBLIC-001]; data gap — multilingual cultural wording and heritage sightlines require a manual review channel [source:OFFICIAL-ANNOUNCEMENT].
 
