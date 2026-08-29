@@ -240,7 +240,7 @@
     {
       "id": "IMAGES-GENERATED",
       "source_type": "author_generated",
-      "usage": "All 10 PNG figures (site-overview, key-areas, land-use-structure, mobility-bluegreen, metrics-evidence × ZH/EN) regenerated 2026-08-29 with matplotlib from the submission's own metrics.json and geometry GeoJSON layers; drawings/a0-boards.pdf and drawings/a0-boards.en.pdf regenerated 2026-08-29 with reportlab (vector, provisional geometry drawn to scale); drawings/a3-booklet.pdf and drawings/a3-booklet.en.pdf remain the 2026-08-28 originals.",
+      "usage": "All 10 PNG figures (site-overview, key-areas, land-use-structure, mobility-bluegreen, metrics-evidence × ZH/EN) regenerated 2026-08-29 with matplotlib from the submission's own metrics.json and geometry GeoJSON layers; drawings/a0-boards.pdf and drawings/a0-boards.en.pdf regenerated 2026-08-29 with reportlab (vector, provisional geometry drawn to scale); drawings/a3-booklet.pdf and drawings/a3-booklet.en.pdf remain the 2026-08-28 originals; plus 4 offline rendered-preview PNGs (visual/assets/rendered-preview/) captured from the submission HTMLs with headless Chromium for review evidence.",
       "publisher": "Author (MIMConsult/jingzhang-ai-symbiotic-belt participant)",
       "url_or_path": "assets/figures/*.png, drawings/*.pdf (local generation; no external image sources)",
       "date_or_version": "figures & A0 boards regenerated 2026-08-29; A3 booklet 2026-08-28 (unchanged)",

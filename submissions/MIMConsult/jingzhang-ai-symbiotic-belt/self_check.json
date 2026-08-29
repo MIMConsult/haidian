@@ -78,7 +78,7 @@
       "result": "pass",
       "severity": "major",
       "target": "report/proposal.html, report/proposal.en.html, visual/index.html, visual/index.en.html",
-      "message": "Remote font dependency removed; offline OFL-derived subset embedded as truetype+woff(v1) data URIs in all four HTML pages (truetype first for wkhtmltopdf/Qt-WebKit compatibility, font-display:block); verified registered+loaded in Chromium via document.fonts (400/700) AND rendered with zero missing glyphs through wkhtmltopdf 0.12.6 (the review-packet PDF engine); coverage 0 missing; full license text in report/copyright_statement.md."
+      "message": "Remote font dependency removed; offline OFL-derived subset embedded as truetype+woff(v1) data URIs in all four HTML pages (truetype first for wkhtmltopdf/Qt-WebKit compatibility, font-display:block); verified in Chromium document.fonts (400/700 loaded) AND wkhtmltopdf 0.12.6 (zero missing glyphs); rendered-preview PNGs shipped under visual/assets/rendered-preview/ as offline visual evidence; coverage 0 missing; license text in report/copyright_statement.md."
     }
   ],
   "ok": true,
