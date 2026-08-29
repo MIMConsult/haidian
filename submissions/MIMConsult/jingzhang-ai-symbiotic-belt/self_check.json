@@ -78,7 +78,7 @@
       "result": "pass",
       "severity": "major",
       "target": "report/proposal.html, report/proposal.en.html, visual/index.html, visual/index.en.html",
-      "message": "Remote font dependency removed (stale FONT-NOTO-SANS-SC declaration replaced by FONT-EMBEDDED-SUBSET); offline OFL-derived subset embedded as data URIs in all four HTML pages; @font-face rules verified registered+loaded in a real browser engine via document.fonts (400 and 700 both loaded); full license text in report/copyright_statement.md; character coverage verified 0 missing."
+      "message": "Remote font dependency removed; offline OFL-derived subset embedded as truetype+woff(v1) data URIs in all four HTML pages (truetype first for wkhtmltopdf/Qt-WebKit compatibility, font-display:block); verified registered+loaded in Chromium via document.fonts (400/700) AND rendered with zero missing glyphs through wkhtmltopdf 0.12.6 (the review-packet PDF engine); coverage 0 missing; full license text in report/copyright_statement.md."
     }
   ],
   "ok": true,

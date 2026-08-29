@@ -218,10 +218,10 @@
     {
       "id": "FONT-EMBEDDED-SUBSET",
       "source_type": "bundled_font_derived",
-      "usage": "Offline CJK font subset (family \"JZK Local Sans\", Regular+Bold woff2) embedded as data URIs in report/proposal.html, report/proposal.en.html, visual/index.html and visual/index.en.html; charset (1024 glyphs) derived from the actual character set of those four files; guarantees offline rendering without missing-glyph boxes and removes all remote font requests.",
+      "usage": "Offline CJK font subset (family \"JZK Local Sans\", Regular+Bold) embedded as data URIs in report/proposal.html, report/proposal.zh.html, report/proposal.en.html, visual/index.html and visual/index.en.html; charset (1024 glyphs) derived from the actual character set of those pages; formats: truetype + woff(v1) data URIs (truetype listed first for wkhtmltopdf/Qt-WebKit compatibility), font-display:block. Verified loading in Chromium (document.fonts) AND wkhtmltopdf 0.12.6 (patched qt) with zero missing glyphs.",
       "publisher": "Subset derived by the participant from Noto Sans SC (© 2014-2020 Adobe), SIL Open Font License 1.1",
       "url_or_path": "assets/fonts/OFL-NotoSansSC-1.1.txt (bundled license text); embedded in the four HTML files listed above",
-      "date_or_version": "subset built 2026-08-29 from Noto Sans SC (OFL 1.1 distribution)",
+      "date_or_version": "subset built 2026-08-29 from Noto Sans SC (OFL 1.1); v4 formats verified same day",
       "applicable_scope": "Rendering of the four submission HTML pages only; not used by PDF or figure generation",
       "license_or_reuse_boundary": "OFL 1.1 permits modification and redistribution provided the license text accompanies the font; the subset is renamed \"JZK Local Sans\" (no Reserved Font Name use) and the unmodified license text is bundled at assets/fonts/OFL-NotoSansSC-1.1.txt",
       "verification_status": "confirmed — subset embedded inline as data URIs; zero remote font requests; programmatic coverage check over all four HTML files reports 0 missing glyphs"
