@@ -25,7 +25,7 @@
       "source_type": "agent_inferred_from_public_data",
       "usage": "Submitted site boundary geometry source (provisional).",
       "source_id_reference": "SRC-PROVISIONAL-BOUNDARIES-2026",
-      "usability_notice_zh": "provisional_constraint，official_boundary=false；满足百年京张 AI 创新带公告统一边界条款用于 formal 内容评审；所有面积、比例、分期范围类结论需在官方 polygon 发布后按 metrics.json 内 4 步 provisional_recalc_path 复算。"
+      "usability_notice_zh": "provisional_constraint，official_boundary=false；满足百年京张 AI 创新带公告统一边界条款用于 formal 内容评审；所有面积、比例、分期范围类结论需在官方 polygon 发布后按既定复算路径复算并更新全部警示状态。"
     },
     {
       "id": "KEY-AREA-SOURCE",
@@ -74,13 +74,102 @@
     {
       "id": "CASE-BENCHMARK",
       "source_type": "public_aggregate_reference",
-      "usage": "8-case benchmark table outcomes (Hangzhou City Brain / Xiongan Twin / Shanghai Zhangjiang / Haidian City Brain / Shenzhen Pengcheng / Hefei Speech Valley / London Chiswick / Guangzhou Nansha).",
-      "publisher": "Multiple official / corporate portals and press releases",
-      "url_or_path": "Per-case URLs listed in proposal.md case-benchmark subsection notes",
-      "date_or_version": "2016–2020 case timelines; registry 2026-08-27",
+      "usage": "8-case benchmark table outcomes (Hangzhou City Brain / Xiongan Twin / Shanghai Zhangjiang / Haidian City Brain / Shenzhen Pengcheng / Hefei Speech Valley / London Chiswick / Guangzhou Nansha). Per-case primary sources were retrieved and verified accessible on 2026-08-29; see case_sources.",
+      "publisher": "Per-case publishers listed in case_sources (government portals, Xinhua/People's Daily, official sites)",
+      "url_or_path": "proposal.md / proposal.en.md AI case-benchmark table + CASE-BENCHMARK.case_sources below",
+      "date_or_version": "case timelines per per-case sources; per-case access date 2026-08-29",
       "applicable_scope": "Conceptual positioning reference only; not for quantitative recomputation",
-      "license_or_reuse_boundary": "Public-source aggregate; reuse for benchmark narrative, not as authority for precise metrics",
-      "verification_status": "downgraded — case outcomes are publicly disclosed averages; precise URLs and raw data not independently verified; used as conceptual positioning reference only, not for quantitative recomputation"
+      "license_or_reuse_boundary": "Public-source aggregate; reuse for benchmark narrative, not as authority for precise metrics; deep links cited per case in proposal text and case_sources",
+      "verification_status": "downgraded — per-case primary sources listed in case_sources and verified accessible on 2026-08-29; outcomes are publicly disclosed figures quoted from those sources, NOT independently audited; conceptual positioning reference only, not for quantitative recomputation",
+      "case_sources": [
+        {
+          "case": "杭州城市大脑 / Hangzhou City Brain",
+          "publisher": "新华网；中国网信网",
+          "date": "2016-10-14；2020-10-23",
+          "urls": [
+            "https://www.xinhuanet.com/politics/2016-10/14/c_1119721110.htm",
+            "http://www.cac.gov.cn/2020-10/23/c_1605022247830939.htm"
+          ],
+          "supporting_fields": "2016 云栖大会发布城市数据大脑；交通治理与城市治理应用口径",
+          "verification": "公开披露 / 未独立核验"
+        },
+        {
+          "case": "雄安数字孪生城市 / Xiongan Digital Twin City",
+          "publisher": "雄安新区管委会官网（xiongan.gov.cn）",
+          "date": "2025-11-02；2024-09-13",
+          "urls": [
+            "https://www.xiongan.gov.cn/20251102/7a22118317df4e50943f966b8bcb0fad/c.html",
+            "http://www.xiongan.gov.cn/2024-09/13/c_1212396553.htm"
+          ],
+          "supporting_fields": "数字道路 500 余公里、感知终端近百万个；入选国家数据局城市全域数字化转型典型案例",
+          "verification": "公开披露（政府官网）/ 未独立核验"
+        },
+        {
+          "case": "上海张江 AI 岛 / Shanghai Zhangjiang AI Island",
+          "publisher": "新华网；浦东新区政府官网",
+          "date": "2019-07-17；访问 2026-08-29",
+          "urls": [
+            "http://www.xinhuanet.com/politics/2019-07/17/c_1124766717.htm",
+            "https://www.pudong.gov.cn/zwgk/14496.gkml_zdgz/2025/268/346340.html"
+          ],
+          "supporting_fields": "人工智能岛开园与 AI 创新应用先导区；张江人工智能创新小镇规划（企业集聚目标）",
+          "verification": "公开披露 / 未独立核验（“入驻企业百家”未逐项核验）"
+        },
+        {
+          "case": "海淀城市大脑 / Haidian City Brain",
+          "publisher": "海淀区政府官网（zyk.bjhd.gov.cn）；国家发改委网站转载",
+          "date": "2020-09-01；2018-02-24",
+          "urls": [
+            "https://zyk.bjhd.gov.cn/zwdt/xxgk/zcjd/zcjd/202009/t20200901_4422295_hd.shtml",
+            "https://www.ndrc.gov.cn/fggz/jgbg/ywgz/201802/t20180224_1207602_ext.html"
+          ],
+          "supporting_fields": "2018 年初启动建设、两年完成顶层设计；2018 年区政府与百度签署合作备忘录",
+          "verification": "公开披露（政府官网）/ 未独立核验"
+        },
+        {
+          "case": "深圳鹏城实验室 / Shenzhen Pengcheng Lab",
+          "publisher": "鹏城实验室官网（pcl.ac.cn）",
+          "date": "访问 2026-08-29；工作动态 2025-10-20",
+          "urls": [
+            "https://www.pcl.ac.cn/",
+            "https://www.pcl.ac.cn/html/897/2025-10-20/content-4631.html"
+          ],
+          "supporting_fields": "机构定位（网络通信领域新型科研机构、AI 算力与科研平台）；成立五周年工作动态",
+          "verification": "公开披露（机构官网）/ 未独立核验；原“城市视频分析能力”表述已修正"
+        },
+        {
+          "case": "合肥中国声谷 / Hefei China Speech Valley",
+          "publisher": "人民日报（中科院声学所网站转载）；新华网安徽频道",
+          "date": "2021-08-04；访问 2026-08-29",
+          "urls": [
+            "https://www.aass.ac.cn/html/2021-08-04/401_8208.html",
+            "http://www.ah.xinhuanet.com/zhuanti/zgsg/index.htm"
+          ],
+          "supporting_fields": "2020 年集群入驻企业 1024 户、营业收入 1060 亿元；专题页口径入驻企业超千家",
+          "verification": "公开披露（媒体转述集群统计）/ 未独立核验"
+        },
+        {
+          "case": "伦敦 Chiswick Park / London Chiswick Park",
+          "publisher": "Enjoy-Work 官网（enjoy-work.com）",
+          "date": "访问 2026-08-29",
+          "urls": [
+            "https://enjoy-work.com/"
+          ],
+          "supporting_fields": "year-round programme of events（全年活动计划）；活动品牌运营模式",
+          "verification": "公开披露（企业官网）/ 未独立核验；年活动量为官网口径、非独立审计值"
+        },
+        {
+          "case": "广州南沙自动驾驶测试区 / Guangzhou Nansha Test Zone",
+          "publisher": "南沙区政府官网（gzns.gov.cn）；广州市政府官网（gz.gov.cn）",
+          "date": "访问 2026-08-29（2024 年度数据）",
+          "urls": [
+            "https://www.gzns.gov.cn/gznskgx/gkmlpt/content/10/10248/post_10248672.html",
+            "https://www.gz.gov.cn/xw/jrgz/content/post_7379666.html"
+          ],
+          "supporting_fields": "累计测试里程近 900 万公里、2024 年重点企业总营收 33.66 亿元、测试车辆规模占全市 20%；混行试点先行试点区",
+          "verification": "公开披露（政府官网）/ 未独立核验"
+        }
+      ]
     },
     {
       "id": "RENT-RANGE",
@@ -110,7 +199,7 @@
       "usage": "London Chiswick Park ~100 events/year as event-brand benchmark reference.",
       "publisher": "Chiswick Park official / Enjoy-Work brand public materials",
       "url_or_path": "https://www.enjoy-work.com / public corporate press materials",
-      "date_or_version": "Operational since 2001; reference 2026-08-27",
+      "date_or_version": "Operational since 2001; official site accessed 2026-08-29",
       "applicable_scope": "Event-brand operational model reference; not for direct replication claims",
       "license_or_reuse_boundary": "Public corporate materials; reuse for benchmark narrative",
       "verification_status": "downgraded — ~100 events/year is a public corporate claim from enjoy-work.com; precise annual count not independently audited; used as event-brand operational model reference only"
@@ -127,37 +216,37 @@
       "verification_status": "downgraded — project-level formal basis not yet obtained; treated as proposed strategy, not an authority for project approval"
     },
     {
-      "id": "FONT-NOTO-SANS-SC",
-      "source_type": "web_font_external",
-      "usage": "Noto Sans SC (Google Fonts) loaded via @import in report/proposal.html and visual/index.html for CJK rendering; prevents missing-character boxes.",
-      "publisher": "Google Inc. / Google Fonts",
-      "url_or_path": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap",
-      "date_or_version": "Accessed 2026-08-28; Google Fonts API serves latest version",
-      "applicable_scope": "Web font for HTML rendering only; not bundled in submission package",
-      "license_or_reuse_boundary": "Open Font License (OFL); loaded from Google Fonts CDN at runtime; not embedded or redistributed in submission package; compliant with OFL terms",
-      "verification_status": "confirmed — web font loaded from Google Fonts CDN; OFL licensed; not bundled in package"
+      "id": "FONT-EMBEDDED-SUBSET",
+      "source_type": "bundled_font_derived",
+      "usage": "Offline CJK font subset (family \"JZK Local Sans\", Regular+Bold woff2) embedded as data URIs in report/proposal.html, report/proposal.en.html, visual/index.html and visual/index.en.html; charset (1024 glyphs) derived from the actual character set of those four files; guarantees offline rendering without missing-glyph boxes and removes all remote font requests.",
+      "publisher": "Subset derived by the participant from Noto Sans SC (© 2014-2020 Adobe), SIL Open Font License 1.1",
+      "url_or_path": "embedded as data URIs in report/proposal.html, report/proposal.en.html, visual/index.html, visual/index.en.html; full OFL license text bundled in report/copyright_statement.md",
+      "date_or_version": "subset built 2026-08-29 from Noto Sans SC (OFL 1.1 distribution)",
+      "applicable_scope": "Rendering of the four submission HTML pages only; not used by PDF or figure generation",
+      "license_or_reuse_boundary": "OFL 1.1 permits modification and redistribution provided the license text accompanies the font; the subset is renamed \"JZK Local Sans\" (no Reserved Font Name use) and the unmodified license text is bundled at assets/fonts/OFL-NotoSansSC-1.1.txt",
+      "verification_status": "confirmed — subset embedded inline as data URIs; zero remote font requests; programmatic coverage check over all four HTML files reports 0 missing glyphs"
     },
     {
       "id": "FONT-MSYH",
       "source_type": "system_font",
-      "usage": "Microsoft YaHei (msyh.ttc) used in PDF generation via reportlab/PIL for CJK rendering in drawings/a0-boards.pdf, a3-booklet.pdf and figures.",
+      "usage": "Microsoft YaHei (msyh.ttc) used at generation time via reportlab for drawings/a0-boards.pdf and drawings/a0-boards.en.pdf; TrueType subsets are embedded INSIDE those PDF files (standard document embedding, permitted by the font's embedding permission); no standalone font file is redistributed.",
       "publisher": "Microsoft Corporation",
       "url_or_path": "C:\\Windows\\Fonts\\msyh.ttc (system-installed on author's Windows host; not redistributed with submission)",
       "date_or_version": "System-installed; version varies by Windows update",
       "applicable_scope": "PDF/PNG generation on author's local Windows host only; not embedded in output files or bundled in submission package",
       "license_or_reuse_boundary": "System font; rendering only on Windows host; not embedded in PDF or redistributed with submission; compliant with system font usage",
-      "verification_status": "confirmed — system font, not bundled in submission package"
+      "verification_status": "confirmed — system font used at generation time; glyph subsets embedded within generated PDFs; the earlier claim that fonts are 'not embedded in output files' was inaccurate and has been corrected"
     },
     {
       "id": "IMAGES-GENERATED",
       "source_type": "author_generated",
-      "usage": "All 10 PNG figures (site-overview, land-use-structure, key-areas, mobility-bluegreen, metrics-evidence x ZH/EN) and 4 PDFs (a0-boards, a3-booklet x ZH/EN) generated by author using Python (PIL, matplotlib, reportlab) from submission's own metrics.json and geometry GeoJSON data.",
+      "usage": "All 10 PNG figures (site-overview, key-areas, land-use-structure, mobility-bluegreen, metrics-evidence × ZH/EN) regenerated 2026-08-29 with matplotlib from the submission's own metrics.json and geometry GeoJSON layers; drawings/a0-boards.pdf and drawings/a0-boards.en.pdf regenerated 2026-08-29 with reportlab (vector, provisional geometry drawn to scale); drawings/a3-booklet.pdf and drawings/a3-booklet.en.pdf remain the 2026-08-28 originals.",
       "publisher": "Author (MIMConsult/jingzhang-ai-symbiotic-belt participant)",
       "url_or_path": "assets/figures/*.png, drawings/*.pdf (local generation; no external image sources)",
-      "date_or_version": "Generated 2026-08-28",
+      "date_or_version": "figures & A0 boards regenerated 2026-08-29; A3 booklet 2026-08-28 (unchanged)",
       "applicable_scope": "All static figures and PDF drawings in submission",
       "license_or_reuse_boundary": "Author-generated original work; no third-party images, icons, or map basemaps used; geometry data derived from submission's own GeoJSON files; all text content authored by participant",
-      "verification_status": "confirmed — all figures and PDFs are author-generated originals; no external image assets, icons, or map tiles used"
+      "verification_status": "confirmed — all figures and PDFs are author-generated originals from submitted data; no external image assets, icons, or map tiles used"
     }
   ]
 }
