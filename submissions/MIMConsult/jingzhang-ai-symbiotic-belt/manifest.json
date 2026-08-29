@@ -88,7 +88,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "553c4304427eac7e638e4d8f264bcc5b911d0bb64c1decd9258531b9f4288216"
+      "sha256": "b43d7f32551b1eb5cd186c13928f55a2faf34bb8512e5619248c52306aa3aba7"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -277,7 +277,7 @@
       "role": "visualization",
       "required": true,
       "language": "en",
-      "sha256": "10b32a66424606904b31e7c5c4d72ebdab61bd03a973860f9580174444dc0a83",
+      "sha256": "d39f872374c31021edcbb7a44aaf981127c02d0c41ff0f3fb5d5dff048f91526",
       "translation_of": "visual/index.html"
     },
     {
