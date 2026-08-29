@@ -220,7 +220,7 @@
       "source_type": "bundled_font_derived",
       "usage": "Offline CJK font subset (family \"JZK Local Sans\", Regular+Bold woff2) embedded as data URIs in report/proposal.html, report/proposal.en.html, visual/index.html and visual/index.en.html; charset (1024 glyphs) derived from the actual character set of those four files; guarantees offline rendering without missing-glyph boxes and removes all remote font requests.",
       "publisher": "Subset derived by the participant from Noto Sans SC (© 2014-2020 Adobe), SIL Open Font License 1.1",
-      "url_or_path": "embedded as data URIs in report/proposal.html, report/proposal.en.html, visual/index.html, visual/index.en.html; full OFL license text bundled in report/copyright_statement.md",
+      "url_or_path": "assets/fonts/OFL-NotoSansSC-1.1.txt (bundled license text); embedded in the four HTML files listed above",
       "date_or_version": "subset built 2026-08-29 from Noto Sans SC (OFL 1.1 distribution)",
       "applicable_scope": "Rendering of the four submission HTML pages only; not used by PDF or figure generation",
       "license_or_reuse_boundary": "OFL 1.1 permits modification and redistribution provided the license text accompanies the font; the subset is renamed \"JZK Local Sans\" (no Reserved Font Name use) and the unmodified license text is bundled at assets/fonts/OFL-NotoSansSC-1.1.txt",
@@ -229,13 +229,13 @@
     {
       "id": "FONT-MSYH",
       "source_type": "system_font",
-      "usage": "Microsoft YaHei (msyh.ttc) used at generation time via reportlab for drawings/a0-boards.pdf and drawings/a0-boards.en.pdf; TrueType subsets are embedded INSIDE those PDF files (standard document embedding, permitted by the font's embedding permission); no standalone font file is redistributed.",
+      "usage": "Microsoft YaHei (msyh.ttc) is used at generation time via reportlab for the four PDF drawings (drawings/a0-boards.pdf, drawings/a0-boards.en.pdf, drawings/a3-booklet.pdf, drawings/a3-booklet.en.pdf). TrueType glyph subsets ARE embedded inside those PDF files (standard document embedding); the font is NOT redistributed as a standalone file.",
       "publisher": "Microsoft Corporation",
-      "url_or_path": "C:\\Windows\\Fonts\\msyh.ttc (system-installed on author's Windows host; not redistributed with submission)",
-      "date_or_version": "System-installed; version varies by Windows update",
-      "applicable_scope": "PDF/PNG generation on author's local Windows host only; not embedded in output files or bundled in submission package",
-      "license_or_reuse_boundary": "System font; rendering only on Windows host; not embedded in PDF or redistributed with submission; compliant with system font usage",
-      "verification_status": "confirmed — system font used at generation time; glyph subsets embedded within generated PDFs; the earlier claim that fonts are 'not embedded in output files' was inaccurate and has been corrected"
+      "url_or_path": "C:\\Windows\\Fonts\\msyh.ttc (system-installed on the author's Windows host; embedded subsets travel inside the generated PDFs only)",
+      "date_or_version": "System-installed; version varies by Windows update; fsType read at 2026-08-29",
+      "applicable_scope": "Document embedding inside the four submission PDFs (font subsets embedded in the PDF byte stream). No standalone redistribution of the font file itself.",
+      "license_or_reuse_boundary": "Microsoft YaHei OS/2 fsType = 8 (\"Editable embedding allowed\") per the OpenType specification; Windows font EULA permits embedding fonts in documents for viewing/printing. PDF embedding is therefore permitted; standalone font-file redistribution is not performed. Evidence: fsType read from msyh.ttc via fontTools; embedded subsets verified in the PDF FontDescriptor/FontFile2 objects; see report/copyright_statement.md.",
+      "verification_status": "confirmed — fsType=8 (editable embedding allowed) read from msyh.ttc on 2026-08-29; PDFs embed TrueType subsets (verified in the PDF binary); earlier contradictory wording (\"not embedded in output files\") removed; standalone redistribution of the font file is not performed"
     },
     {
       "id": "IMAGES-GENERATED",

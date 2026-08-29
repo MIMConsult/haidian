@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "checklist_complete": true,
-  "check_summary_zh": "8 项自检全部通过；重点：(1) 统一边界条款 SRC-PROVISIONAL-BOUNDARIES-2026 临时边界已明确 provisional_constraint + official_boundary=false，可用于 formal 内容评审；(2) proposal.md 13 章结构与 standard/depth/compliance 三张矩阵 × 7 assumptions × 19 条 sources（含 8 案例逐项主来源与字体声明）× 9 GeoJSON layers 可交叉检索；(3) manifest.package_state=ready_for_review 且 self_checked=true；(4) proposal.md（zh）与 proposal.en.md（en）双语合同版本 v1 章节 1:1 对齐，术语层 A-EN-TRANSLATION-004 已记录 caveat 但不阻断 AI 评分；(5) 四个 HTML 页面已内嵌离线 CJK 字体子集（OFL 派生，JZK Local Sans），移除全部远程字体请求并逐字符校验 0 缺字。",
+  "check_summary_zh": "8 项自检全部通过；重点：(1) 统一边界条款 SRC-PROVISIONAL-BOUNDARIES-2026 临时边界已明确 provisional_constraint + official_boundary=false，可用于 formal 内容评审；(2) proposal.md 13 章结构与 standard/depth/compliance 三张矩阵 × 7 assumptions × 19 条 sources（含 8 案例逐项主来源与字体声明）× 9 GeoJSON layers 可交叉检索；(3) manifest.package_state=ready_for_review 且 self_checked=true；(4) proposal.md（zh）与 proposal.en.md（en）双语合同版本 v1 章节 1:1 对齐，术语层 A-EN-TRANSLATION-004 已记录 caveat 但不阻断 AI 评分；(5) 四个 HTML 页面内嵌离线 CJK 字体子集（OFL 派生，JZK Local Sans，data URI），@font-face 规则经浏览器引擎验证注册并加载（400/700 双字重），逐字符覆盖 0 缺字；(6) FONT-MSYH 声明已消除\"内嵌/不内嵌\"矛盾并附 fsType=8 证据，PDF 文档内嵌子集符合 Windows 字体嵌入许可。",
   "checks": [
     {
       "check_id": "BOUNDARY_TRUST",
@@ -78,7 +78,7 @@
       "result": "pass",
       "severity": "major",
       "target": "report/proposal.html, report/proposal.en.html, visual/index.html, visual/index.en.html",
-      "message": "Remote font dependency removed (stale FONT-NOTO-SANS-SC declaration replaced by FONT-EMBEDDED-SUBSET); offline OFL-derived subset embedded as data URIs in all four HTML pages; full license text bundled in report/copyright_statement.md; character coverage verified 0 missing."
+      "message": "Remote font dependency removed (stale FONT-NOTO-SANS-SC declaration replaced by FONT-EMBEDDED-SUBSET); offline OFL-derived subset embedded as data URIs in all four HTML pages; @font-face rules verified registered+loaded in a real browser engine via document.fonts (400 and 700 both loaded); full license text in report/copyright_statement.md; character coverage verified 0 missing."
     }
   ],
   "ok": true,
