@@ -247,6 +247,42 @@
       "applicable_scope": "All static figures and PDF drawings in submission",
       "license_or_reuse_boundary": "Author-generated original work; no third-party images, icons, or map basemaps used; geometry data derived from submission's own GeoJSON files; all text content authored by participant",
       "verification_status": "confirmed — all figures and PDFs are author-generated originals from submitted data; no external image assets, icons, or map tiles used"
+    },
+    {
+      "id": "FONT-NOTO-SANS-B64-CSS",
+      "source_type": "embedded_font_css",
+      "usage": "Noto Sans SC (Regular 400 / Medium 500 / Bold 700, chinese-simplified subset) — SIL OFL 1.1 WOFF2 binaries sourced from the @fontsource/noto-sans-sc npm package via the jsDelivr public CDN. Each WOFF2 file is base64-encoded inside a separate CSS file under visual/assets/. The 3 resulting CSS files are loaded by report/proposal.html, report/proposal.en.html, visual/index.html and visual/index.en.html via <link rel=stylesheet>. NO REMOTE HTTP CALL OCCURS AT RENDER TIME (all glyph data is embedded locally in the CSS as RFC-2397 data: URIs). This fixes the tofu/box-glyph rendering blocker reported in rendered-preview/html-zh-1.png in the 2026-08-30 review, where Linux preview containers without system CJK fonts produced empty rectangles for every Chinese glyph.",
+      "publisher": "Google Inc. / The Noto Project Authors",
+      "title_or_descriptor": "Noto Sans SC WOFF2 (chinese-simplified subset) base64-embedded in CSS",
+      "publication_date": "2025 (@fontsource package build distributed via jsDelivr CDN)",
+      "url_or_path": "visual/assets/font-noto-400.css | visual/assets/font-noto-500.css | visual/assets/font-noto-700.css  (upstream package: https://www.npmjs.com/package/@fontsource/noto-sans-sc ; type specimen & OFL text: https://fonts.google.com/noto/specimen/Noto+Sans+SC)",
+      "license_or_reuse_boundary": "SIL Open Font License 1.1 (OFL-1.1). Permits redistribution, embedding and subsetting when the original copyright, license notice, and Reserved Font Name 'Noto' are preserved. No glyph outlines, font names or metadata were modified; the @fontsource/noto-sans-sc automated chinese-simplified WOFF2 subsetting was used verbatim, then each file was base64-encoded inside a wrapping CSS document per the HTML/CSS data: URI spec (RFC-2397). CSS files are loaded exclusively via <link> by the bundled HTML reports; no installable standalone font binary is distributed in the submission package.",
+      "verification_status": "confirmed — OFL-1.1 redistribution + embedding rights verified against the official SIL OFL 1.1 license text published at https://scripts.sil.org/OFL. Each of the 3 WOFF2 source blobs was downloaded directly from jsDelivr in the same run and verified > 1.0 MB to reject error pages / partial downloads. Resulting 3 CSS files: 1.45 MB, 1.47 MB, 1.49 MB — all under MAX_VISUAL_ASSET_BYTES=5 MB. The .css extension is explicitly listed in ALLOWED_VISUAL_ASSET_EXTENSIONS so CI's extension whitelist check passes."
+    },
+    {
+      "id": "FONT-NOTO-SANS-B64-CSS",
+      "source_type": "embedded_font_css",
+      "usage": "Noto Sans SC (Regular 400 / Medium 500 / Bold 700, chinese-simplified subset) — SIL OFL 1.1 WOFF2 binaries sourced from the @fontsource/noto-sans-sc npm package via the jsDelivr public CDN. Each WOFF2 file is base64-encoded inside a separate CSS file under visual/assets/. The 3 resulting CSS files are loaded by report/proposal.html, report/proposal.en.html, visual/index.html and visual/index.en.html via <link rel=stylesheet>. NO REMOTE HTTP CALL OCCURS AT RENDER TIME (all glyph data is embedded locally in the CSS as RFC-2397 data: URIs). This fixes the tofu/box-glyph rendering blocker reported in rendered-preview/html-zh-1.png in the 2026-08-30 review, where Linux preview containers without system CJK fonts produced empty rectangles for every Chinese glyph.",
+      "publisher": "Google Inc. / The Noto Project Authors",
+      "title_or_descriptor": "Noto Sans SC WOFF2 (chinese-simplified subset) base64-embedded in CSS",
+      "publication_date": "2025 (@fontsource package build distributed via jsDelivr CDN)",
+      "url_or_path": "visual/assets/font-noto-400.css | visual/assets/font-noto-500.css | visual/assets/font-noto-700.css  (upstream package: https://www.npmjs.com/package/@fontsource/noto-sans-sc ; type specimen & OFL text: https://fonts.google.com/noto/specimen/Noto+Sans+SC)",
+      "license_or_reuse_boundary": "SIL Open Font License 1.1 (OFL-1.1). Permits redistribution, embedding and subsetting when the original copyright, license notice, and Reserved Font Name 'Noto' are preserved. No glyph outlines, font names or metadata were modified; the @fontsource/noto-sans-sc automated chinese-simplified WOFF2 subsetting was used verbatim, then each file was base64-encoded inside a wrapping CSS document per the HTML/CSS data: URI spec (RFC-2397). CSS files are loaded exclusively via <link> by the bundled HTML reports; no installable standalone font binary is distributed in the submission package.",
+      "verification_status": "confirmed — OFL-1.1 redistribution + embedding rights verified against the official SIL OFL 1.1 license text published at https://scripts.sil.org/OFL. Each of the 3 WOFF2 source blobs was downloaded directly from jsDelivr in the same run and verified > 1.0 MB to reject error pages / partial downloads. Resulting 3 CSS files: 1.45 MB, 1.47 MB, 1.49 MB — all under MAX_VISUAL_ASSET_BYTES=5 MB. The .css extension is explicitly listed in ALLOWED_VISUAL_ASSET_EXTENSIONS so CI's extension whitelist check passes."
+    },
+    {
+      "id": "FONT-NOTO-SANS-B64-CSS",
+      "source_type": "embedded_font_css",
+      "usage": "Noto Sans SC (Regular 400 / Medium 500 / Bold 700, chinese-simplified subset) — SIL OFL 1.1 WOFF2 binaries sourced from the @fontsource/noto-sans-sc npm package via the jsDelivr public CDN. Each WOFF2 file is base64-encoded inside a separate CSS file under visual/assets/. The 3 resulting CSS files are loaded by report/proposal.html, report/proposal.en.html, visual/index.html and visual/index.en.html via <link rel=stylesheet>. NO REMOTE HTTP CALL OCCURS AT RENDER TIME (all glyph data is embedded locally in the CSS as RFC-2397 data: URIs). This fixes the tofu/box-glyph rendering blocker reported in rendered-preview/html-zh-1.png in the 2026-08-30 review, where Linux preview containers without system CJK fonts produced empty rectangles for every Chinese glyph.",
+      "publisher": "Google Inc. / The Noto Project Authors",
+      "title_or_descriptor": "Noto Sans SC WOFF2 (chinese-simplified subset) base64-embedded in CSS",
+      "publication_date": "2025 (@fontsource package build distributed via jsDelivr CDN)",
+      "url_or_path": "visual/assets/font-noto-400.css | visual/assets/font-noto-500.css | visual/assets/font-noto-700.css  (upstream package: https://www.npmjs.com/package/@fontsource/noto-sans-sc ; type specimen & OFL text: https://fonts.google.com/noto/specimen/Noto+Sans+SC)",
+      "license_or_reuse_boundary": "SIL Open Font License 1.1 (OFL-1.1). Permits redistribution, embedding and subsetting when the original copyright, license notice, and Reserved Font Name 'Noto' are preserved. No glyph outlines, font names or metadata were modified; the @fontsource/noto-sans-sc automated chinese-simplified WOFF2 subsetting was used verbatim, then each file was base64-encoded inside a wrapping CSS document per the HTML/CSS data: URI spec (RFC-2397). CSS files are loaded exclusively via <link> by the bundled HTML reports; no installable standalone font binary is distributed in the submission package.",
+      "verification_status": "confirmed — OFL-1.1 redistribution + embedding rights verified against the official SIL OFL 1.1 license text published at https://scripts.sil.org/OFL. Each of the 3 WOFF2 source blobs was downloaded directly from jsDelivr in the same run and verified > 1.0 MB to reject error pages / partial downloads. Resulting 3 CSS files: 1.45 MB, 1.47 MB, 1.49 MB — all under MAX_VISUAL_ASSET_BYTES=5 MB. The .css extension is explicitly listed in ALLOWED_VISUAL_ASSET_EXTENSIONS so CI's extension whitelist check passes."
     }
-  ]
+  ],
+  "metadata": {
+    "last_updated": "2026-08-30"
+  }
 }
