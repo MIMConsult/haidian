@@ -33,25 +33,25 @@
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "58697166efca7a6fb51681038d6f249bf1e9e407d9d797ffd2e9d4b5453b437c"
+      "sha256": "8381390bc73370d62ae57dbad29857718fc0f6ed81652c42e7486785d9303daa"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "228fb04cbbd236e9fe939d999ff1aa38e5eaceab86c2e38d770cb7bb39a30cca"
+      "sha256": "b1ca8cb668311c8d922204cc3aba96695adf6a5dca96f12fd6dc0c2c5e07248a"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "40ac450806b11ee98b1133b2050ed1152ed16f126e3714f8c146f4b5fd52b3fb"
+      "sha256": "08a5584868dd8c7d10708586bfd6bc3119c7e2a5655c9578383e35ff94ef1458"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "7449e1ecebc0f1f03cf73479f52d4235cfffbf482534fb2ad82631a5dbb72295"
+      "sha256": "727bd1f6b5588f249342188857da40dbda3aca64fdfebd3faac47b02289891d8"
     },
     {
       "path": "compliance_matrix.json",
@@ -102,7 +102,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "7ef682dda0ca8352ce2ac7445cbe26cf24e4337904d65558c037ecf65dd8e02d"
+      "sha256": "92f0247d65cf2a1e0e1a16897c3ed01da0c01d88f30acd31af6105f0800498ea"
     },
     {
       "path": "visual/index.html",
@@ -130,7 +130,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "zh",
-      "sha256": "5229740e518425df9edc38befc636164855ac498e70b75acda09db65a980f831"
+      "sha256": "bdb879f0c47b62f8a236cd4546f9cb75f298cfc80ee58d6f0f944e0f3ca284db"
     },
     {
       "path": "assets/figures/mobility-bluegreen.png",
@@ -229,7 +229,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "en",
-      "sha256": "7eef393edec986cd26b6907e3201a1b667e1357f6a2415eb10327e3cb54c13b7",
+      "sha256": "0690807dabfa5b0fede3041039e1c3466cdc175752ea876001ef0a29079e945d",
       "translation_of": "assets/figures/metrics-evidence.png"
     },
     {
@@ -253,7 +253,7 @@
       "role": "drawing",
       "required": true,
       "language": "en",
-      "sha256": "7725073b1db7403dd7a970289ff7c111bb4abbf7efc79417028f380cb01b20dc",
+      "sha256": "d6afa6360f135a6a1b2aac099770686a45a96ad609e11f7e226c4ccdeda2b9e5",
       "translation_of": "drawings/a0-boards.pdf"
     },
     {
@@ -326,7 +326,7 @@
       "role": "visualization",
       "required": false,
       "language": "neutral",
-      "sha256": "360710d9a4d7b9feee67618aa1a620c17e760feca6ca0b19dad60a2763daff14"
+      "sha256": "686060fff528794a1685a8b9b5671aefb1c82e73e81244ae109a34bd68e8e12f"
     }
   ],
   "validation_claim": {

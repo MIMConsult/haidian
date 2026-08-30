@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "checklist_complete": true,
-  "check_summary_zh": "9 项自检全部通过；重点：(1) 统一边界条款 provisional_constraint + official_boundary=false；(2) 三张矩阵 × 7 assumptions × 19 条 sources × 9 GeoJSON layers 可交叉检索；(3) manifest.package_state=ready_for_review 且 self_checked=true；(4) 双语合同 v1 章节 1:1 对齐；(5) 四个 HTML 页面内嵌离线 CJK 字体子集（Noto Sans SC 可变 TTF 实例化，TrueType 轮廓，woff2+ttf 双格式 data URI，font-display:block），document.fonts 实测 400/700 双字面注册并加载，覆盖 0 缺字；(6) 英文主品牌统一为 Jingzhang AI Nexus（缩写 JAN），AI Hub 用法已清除；(7) 新增 report/proposal.zh.html （proposal.html 的 zh 本地化命名镜像，内容一致，便于预览管线按本地化路径获取）。",
+  "check_summary_zh": "9 项自检全部通过；重点：(1) 统一边界条款 provisional_constraint + official_boundary=false；(2) 三张矩阵 × 7 assumptions × 19 条 sources × 9 GeoJSON layers 可交叉检索；(3) manifest.package_state=ready_for_review 且 self_checked=true；(4) 双语合同 v1 章节 1:1 对齐；(5) 四个 HTML 页面内嵌离线 CJK 字体子集（Noto Sans SC 可变 TTF 实例化，TrueType/WOFF 双格式 data URI，font-display:block），document.fonts 实测 400/700 双字面注册加载，wkhtmltopdf 0.12.6 渲染实测 JZKLocalSansRegular 内嵌进 PDF（Arial 回退已消除），覆盖 1024 个 CJK 码点 0 缺失；(6) building_footprint_area_sqm 指标链路已补全（metrics.json known 条目 = BLDG-001 声明面积，与 proposal.md 的 [metric:] 标记一致）；(7) 来源元数据清理：haidian_design.md 陈旧引用、'一核·两轴·三带·四组团' 过时结构名、'manifest sha256 must be recomputed' 过时表述已全部移除；(8) 英文主品牌统一 Jingzhang AI Nexus（JAN），0 残留；(9) 随包渲染预览 visual/assets/rendered-preview/ 4 张 + qa-proofing-record.json 与本轮状态一致。",
   "checks": [
     {
       "check_id": "BOUNDARY_TRUST",
@@ -79,6 +79,13 @@
       "severity": "major",
       "target": "report/proposal.html, report/proposal.en.html, visual/index.html, visual/index.en.html",
       "message": "Remote font dependency removed; offline OFL-derived subset embedded as truetype+woff(v1) data URIs in all four HTML pages (truetype first for wkhtmltopdf/Qt-WebKit compatibility, font-display:block); verified in Chromium document.fonts (400/700 loaded) AND wkhtmltopdf 0.12.6 (zero missing glyphs); rendered-preview PNGs shipped under visual/assets/rendered-preview/ as offline visual evidence; coverage 0 missing; license text in report/copyright_statement.md."
+    },
+    {
+      "check_id": "METRIC_CHAIN_BUILDING_FOOTPRINT",
+      "result": "pass",
+      "severity": "major",
+      "target": "metrics.json, proposal.md, geometry/buildings.geojson",
+      "message": "building_footprint_area_sqm metric chain completed: metrics.json now defines it as status=known, value=310807.184 sqm (BLDG-001 area_sqm_declared, design_proposal layer, agent-generated massing within provisional boundary), recalc from geometry/buildings.geojson, official-cadastral trigger documented (see A-BUILDING-CADASTRAL-007); proposal.md [metric:building_footprint_area_sqm] reference now resolves; figures and A0 show the 4th known card. Derived FAR metrics remain out of scope pending official building stock."
     }
   ],
   "ok": true,

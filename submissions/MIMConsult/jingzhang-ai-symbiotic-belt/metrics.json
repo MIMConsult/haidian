@@ -106,6 +106,17 @@
         "proposal.md",
         "proposal.en.md"
       ]
+    },
+    "building_footprint_area_sqm": {
+      "metric_id": "building_footprint_area_sqm",
+      "value": 310807.184,
+      "unit": "sqm",
+      "scope": "building_footprint",
+      "status": "known",
+      "recalculable_from": [
+        "geometry/buildings.geojson"
+      ],
+      "note": "AI R&D demonstration building footprint (BLDG-001, design_proposal layer, agent-generated massing within the provisional boundary). Value = area_sqm_declared of BLDG-001. FAR-type derived metrics stay out of scope until official cadastral data arrives; recalc via the same provisional_recalc path (official building stock trigger). See A-BUILDING-CADASTRAL-007."
     }
   }
 }
