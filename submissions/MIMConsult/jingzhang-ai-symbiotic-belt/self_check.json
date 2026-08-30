@@ -1,119 +1,206 @@
 {
+  "ok": true,
+  "submission_dir": "submissions\\MIMConsult\\jingzhang-ai-symbiotic-belt",
+  "pr_author": "MIMConsult",
+  "stage": "formal",
+  "deterministic_validation": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/report/proposal.zh.html: byte-identical to `report/proposal.html`; if the translation is still missing, replace it with a rendering in the declared language, and if the file carries no language-specific content, declare language=neutral once and share it between both versions (see docs/formal-submission-guide.md); this notice does not block review"
+      ],
+      "proposal_files": [
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/proposal.md"
+      ],
+      "changelog_files": [],
+      "changed_files": [
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/agent.json",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/assets/figures/key-areas.en.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/assets/figures/key-areas.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/assets/figures/land-use-structure.en.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/assets/figures/land-use-structure.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/assets/figures/metrics-evidence.en.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/assets/figures/metrics-evidence.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/assets/figures/mobility-bluegreen.en.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/assets/figures/mobility-bluegreen.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/assets/figures/site-overview.en.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/assets/figures/site-overview.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/assumptions.json",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/compliance_matrix.json",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/design_depth_matrix.json",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/drawings/a0-boards.en.pdf",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/drawings/a0-boards.pdf",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/drawings/a3-booklet.en.pdf",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/drawings/a3-booklet.pdf",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/geometry/buildings.geojson",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/geometry/constraints.geojson",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/geometry/green_space.geojson",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/geometry/key_areas.geojson",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/geometry/land_use.geojson",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/geometry/phasing.geojson",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/geometry/public_space.geojson",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/geometry/roads.geojson",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/geometry/site_boundary.geojson",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/manifest.json",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/metrics.json",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/proposal.en.md",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/proposal.md",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/report/copyright_statement.md",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/report/narrative.md",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/report/proposal.en.html",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/report/proposal.html",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/report/proposal.zh.html",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/self_check.json",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/sources.json",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/standard_matrix.json",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/visual/assets/previews/html-en-report.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/visual/assets/previews/html-en-visual.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/visual/assets/previews/html-zh-report.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/visual/assets/previews/html-zh-visual.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/visual/assets/qa-proofing-record.json",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/visual/assets/rendered-preview/html-en-1.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/visual/assets/rendered-preview/html-en-2.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/visual/assets/rendered-preview/html-zh-1.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/visual/assets/rendered-preview/html-zh-2.png",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/visual/index.en.html",
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt/visual/index.html"
+      ],
+      "ai_package_stages": {
+        "submissions/MIMConsult/jingzhang-ai-symbiotic-belt": "formal"
+      },
+      "total_bytes": 20278781,
+      "maintainer_bypass": false
+    },
+    "stderr": ""
+  },
+  "spatial_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "stage": "formal",
+      "issues": [
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-001",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-002",
+          "expected": null,
+          "actual": null
+        },
+        {
+          "check_id": "KEY_AREA_PROVISIONAL",
+          "severity": "minor",
+          "target_file": "geometry/key_areas.geojson",
+          "message": "Key detailed-design area is provisional; do not use it as an official redline or precise-area basis. Content scoring remains eligible.",
+          "target_feature_id": "PROV-KEY-003",
+          "expected": null,
+          "actual": null
+        }
+      ],
+      "metrics": {
+        "site_area_sqm": 11412825.386,
+        "green_space_area_sqm": 1408600.768,
+        "public_space_area_sqm": 836345.643,
+        "building_footprint_area_sqm": 310807.184,
+        "green_ratio": 0.123423,
+        "public_space_ratio": 0.073281
+      }
+    },
+    "stderr": ""
+  },
+  "visual_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "metrics_seen": {
+        "site_area_sqm": 11412825.386,
+        "green_ratio": 0.123423,
+        "public_space_ratio": 0.073281
+      }
+    },
+    "stderr": ""
+  },
+  "professional_review": {
+    "returncode": 0,
+    "ok": true,
+    "stdout": {
+      "ok": true,
+      "issues": [],
+      "summary": {
+        "standard_matrix_items": 6,
+        "design_depth_items": 15,
+        "known_metric_refs_required": 6,
+        "proposal_format_version": "2",
+        "evidence_contract": "section-anchors-plus-structured-audit",
+        "proposal_reference_counts": {
+          "source": 10,
+          "standard": 5,
+          "depth": 25,
+          "data": 11,
+          "metric": 4
+        }
+      }
+    },
+    "stderr": ""
+  },
+  "spatial_issue_ids": [
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL",
+    "KEY_AREA_PROVISIONAL"
+  ],
+  "visual_issue_ids": [],
+  "professional_issue_ids": [],
+  "missing_review_dependencies": [],
+  "can_enter_formal_review": true,
+  "package_type": "professional_design_package",
+  "review_status": "formal-review-ready",
+  "next_actions": [],
   "schema_version": "0.1.0",
-  "checklist_complete": true,
-  "check_summary_zh": "9 项自检全部通过；重点：(1) 统一边界条款 provisional_constraint + official_boundary=false；(2) 三张矩阵 × 7 assumptions × 19 条 sources × 9 GeoJSON layers 可交叉检索；(3) manifest.package_state=ready_for_review 且 self_checked=true；(4) 双语合同 v1 章节 1:1 对齐；(5) 四个 HTML 页面内嵌离线 CJK 字体子集（Noto Sans SC 可变 TTF 实例化，TrueType/WOFF 双格式 data URI，font-display:block），document.fonts 实测 400/700 双字面注册加载，wkhtmltopdf 0.12.6 渲染实测 JZKLocalSansRegular 内嵌进 PDF（Arial 回退已消除），覆盖 1024 个 CJK 码点 0 缺失；(6) building_footprint_area_sqm 指标链路已补全（metrics.json known 条目 = BLDG-001 声明面积，与 proposal.md 的 [metric:] 标记一致）；(7) 来源元数据清理：haidian_design.md 陈旧引用、'一核·两轴·三带·四组团' 过时结构名、'manifest sha256 must be recomputed' 过时表述已全部移除；(8) 英文主品牌统一 Jingzhang AI Nexus（JAN），0 残留；(9) 随包渲染预览 visual/assets/rendered-preview/ 4 张 + qa-proofing-record.json 与本轮状态一致。",
   "checks": [
-    {
-      "check_id": "BOUNDARY_TRUST",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "Provisional boundary is present; replace with official redline before professional scoring."
-    },
-    {
-      "check_id": "KEY_AREAS_TRUST",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/key_areas.geojson",
-      "message": "Three required key areas are provisional; replace with official polygons before professional scoring."
-    },
-    {
-      "check_id": "LAND_USE_TOPOLOGY",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/land_use.geojson",
-      "message": "Initial land-use polygons are derived from site boundary partitioning."
-    },
-    {
-      "check_id": "VISUAL_STATIC",
-      "result": "pass",
-      "severity": "info",
-      "target": "visual/index.html",
-      "message": "Static HTML visualization is generated without external dependencies; an offline CJK subset font (JZK Local Sans, OFL-derived from Noto Sans SC) is embedded as data URIs in all four HTML pages; no remote requests; programmatic character-coverage check reports 0 missing glyphs."
-    },
     {
       "check_id": "DETERMINISTIC_VALIDATION",
       "result": "pass",
       "severity": "blocking",
-      "target": "manifest.json",
-      "message": "manifest schema valid; sha256 LF-normalized; metrics.json valid JSON."
+      "target": "validate_local_submission.py",
+      "message": "deterministic_validation: PASS"
     },
     {
       "check_id": "SPATIAL_REVIEW",
       "result": "pass",
       "severity": "blocking",
-      "target": "geometry/site_boundary.geojson",
-      "message": "Land-use polygons cover provisional site boundary; key areas inside boundary; metric recalc within tolerance."
+      "target": "spatial_review.py",
+      "message": "spatial_review: PASS"
     },
     {
       "check_id": "VISUAL_PACKAGING",
       "result": "pass",
       "severity": "blocking",
-      "target": "visual/index.html",
-      "message": "Visual metrics aligned with metrics.json; green_ratio=0.123423, public_space_ratio=0.073281, site_area_sqm=11412825.386."
+      "target": "visual_review.py",
+      "message": "visual_review: PASS"
     },
     {
       "check_id": "PROFESSIONAL_EVIDENCE",
       "result": "pass",
       "severity": "blocking",
-      "target": "proposal.md",
-      "message": "Proposal includes references to standards, design depth items, geometry, metrics, sources, and assumptions."
-    },
-    {
-      "check_id": "BOUNDARY_PROVISIONAL_FLAG",
-      "result": "pass",
-      "severity": "major",
-      "target": "geometry/site_boundary.geojson",
-      "message": "All submitted polygons are flagged provisional_constraint with official_boundary=false; recalc path documented in manifest.validation_claim.provisional_recalc_path."
-    },
-    {
-      "check_id": "BILINGUAL_CONTRACT",
-      "result": "pass",
-      "severity": "major",
-      "target": "proposal.en.md",
-      "message": "proposal.en.md exists with bilingual_contract_version=1 and structural alignment to proposal.md (14 chapters, front-matter lock)."
-    },
-    {
-      "check_id": "FONT_OFFLINE_EMBEDDED",
-      "result": "pass",
-      "severity": "major",
-      "target": "report/proposal.html, report/proposal.en.html, visual/index.html, visual/index.en.html",
-      "message": "Remote font dependency removed; offline OFL-derived subset embedded as truetype+woff(v1) data URIs in all four HTML pages (truetype first for wkhtmltopdf/Qt-WebKit compatibility, font-display:block); verified in Chromium document.fonts (400/700 loaded) AND wkhtmltopdf 0.12.6 (zero missing glyphs); rendered-preview PNGs shipped under visual/assets/rendered-preview/ as offline visual evidence; coverage 0 missing; license text in report/copyright_statement.md."
-    },
-    {
-      "check_id": "METRIC_CHAIN_BUILDING_FOOTPRINT",
-      "result": "pass",
-      "severity": "major",
-      "target": "metrics.json, proposal.md, geometry/buildings.geojson",
-      "message": "building_footprint_area_sqm metric chain completed: metrics.json now defines it as status=known, value=310807.184 sqm (BLDG-001 area_sqm_declared, design_proposal layer, agent-generated massing within provisional boundary), recalc from geometry/buildings.geojson, official-cadastral trigger documented (see A-BUILDING-CADASTRAL-007); proposal.md [metric:building_footprint_area_sqm] reference now resolves; figures and A0 show the 4th known card. Derived FAR metrics remain out of scope pending official building stock."
-    }
-  ],
-  "ok": true,
-  "can_enter_formal_review": true,
-  "gates": [
-    {
-      "gate": "DETERMINISTIC_VALIDATION",
-      "pass": true,
-      "blocking": true,
-      "message": "manifest schema valid; sha256 LF-normalized; metrics.json valid JSON"
-    },
-    {
-      "gate": "PROFESSIONAL_EVIDENCE",
-      "pass": true,
-      "blocking": true,
-      "message": "proposal.md cites sources, standards, depth, geometry, metrics, assumptions"
-    },
-    {
-      "gate": "SPATIAL_REVIEW",
-      "pass": true,
-      "blocking": true,
-      "message": "9 GeoJSON layers present; provisional_boundary flag set on all polygons"
-    },
-    {
-      "gate": "VISUAL_PACKAGING",
-      "pass": true,
-      "blocking": true,
-      "message": "A0=1p/A3=7p non-zero; HTML static; bilingual .en.* counterparts created"
+      "target": "professional_review.py",
+      "message": "professional_review: PASS"
     }
   ]
 }

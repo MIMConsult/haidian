@@ -242,7 +242,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "en",
-      "sha256": "8b9e40e9d580e9a571d2ae830678d2ae872e6ee81811d9733fce10c071f34751",
+      "sha256": "b3b01b25f35e60a105c9681def1d677759de451a71582267f105402d5c49673d",
       "translation_of": "report/proposal.html"
     },
     {
@@ -250,27 +250,27 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "56eb9a3df86e657df1b0f446a9d7f1858a2d4c03e026a49c95bff2d42ba140bc"
+      "sha256": "097d728df446eb790bfe05f44ecff2f73793236884b3ba87372fb436697ab4af"
     },
     {
       "path": "report/proposal.zh.html",
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "56eb9a3df86e657df1b0f446a9d7f1858a2d4c03e026a49c95bff2d42ba140bc",
+      "sha256": "097d728df446eb790bfe05f44ecff2f73793236884b3ba87372fb436697ab4af",
       "translation_of": "report/proposal.html"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "727bd1f6b5588f249342188857da40dbda3aca64fdfebd3faac47b02289891d8"
+      "sha256": "701bc7e3e71cea1fe9b38279eb3b86c6b23fefd822f0a18b04e4edfa4e981304"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "08a5584868dd8c7d10708586bfd6bc3119c7e2a5655c9578383e35ff94ef1458"
+      "sha256": "704cdff5a85d3e376da612cc27561118beab107426728ae750a5be81dc4ff10f"
     },
     {
       "path": "standard_matrix.json",
@@ -318,7 +318,7 @@
       "role": "visualization",
       "required": true,
       "language": "en",
-      "sha256": "b81d507fb29c454c8c2dab452f6cfdf7d39437751202877b0f448be5a55d4987",
+      "sha256": "d65fe15e4b9e203f9b70c486398a75e289f8f97bb0924dba2b9c0fa67ffc8e20",
       "translation_of": "visual/index.html"
     },
     {
@@ -326,7 +326,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "d0cc488f33d4e85bd37d43f8100cf5232e81c0c4ab06d1ad97ba9588a6343711"
+      "sha256": "e27bc68a4895ec654d7125439da157511afaaeaa5f9d2dcdc8199d61e5c53742"
     }
   ],
   "validation_claim": {

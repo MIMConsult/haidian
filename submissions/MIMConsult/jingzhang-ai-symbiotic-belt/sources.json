@@ -218,13 +218,13 @@
     {
       "id": "FONT-EMBEDDED-SUBSET",
       "source_type": "bundled_font_derived",
-      "usage": "Offline CJK font subset (family \"JZK Local Sans\", Regular+Bold) embedded as data URIs in report/proposal.html, report/proposal.zh.html, report/proposal.en.html, visual/index.html and visual/index.en.html; charset (1024 glyphs) derived from the actual character set of those pages; formats: truetype + woff(v1) data URIs (truetype listed first for wkhtmltopdf/Qt-WebKit compatibility), font-display:block. Verified loading in Chromium (document.fonts) AND wkhtmltopdf 0.12.6 (patched qt) with zero missing glyphs.",
+      "usage": "Offline CJK font subset (family \"JZK Local Sans\", single Regular 400 face; bold synthesized by the renderer because patched-Qt/wkhtmltopdf keeps only the last @font-face per family) embedded as TTF data URIs in report/proposal.html, report/proposal.zh.html, report/proposal.en.html, visual/index.html and visual/index.en.html; no remote font requests. v6 subset rebuilt 2026-08-30 from the union charset (988 codepoints) of all five HTML documents, restoring glyphs lost when rounds 7-9 edited text after the v5 subset was frozen (proposal.html/zh: 10 chars; index.html: 2 chars).",
       "publisher": "Subset derived by the participant from Noto Sans SC (© 2014-2020 Adobe), SIL Open Font License 1.1",
       "url_or_path": "assets/fonts/OFL-NotoSansSC-1.1.txt (bundled license text); embedded in the four HTML files listed above",
-      "date_or_version": "subset built 2026-08-29 from Noto Sans SC (OFL 1.1); v4 formats verified same day",
+      "date_or_version": "v6 subset generated 2026-08-30 from locally installed Noto Sans SC (SIL Open Font License 1.1); CFF outlines converted to quadratic TTF via fontTools cu2qu",
       "applicable_scope": "Rendering of the four submission HTML pages only; not used by PDF or figure generation",
       "license_or_reuse_boundary": "OFL 1.1 permits modification and redistribution provided the license text accompanies the font; the subset is renamed \"JZK Local Sans\" (no Reserved Font Name use) and the unmodified license text is bundled at assets/fonts/OFL-NotoSansSC-1.1.txt",
-      "verification_status": "confirmed — subset embedded inline as data URIs; zero remote font requests; programmatic coverage check over all four HTML files reports 0 missing glyphs"
+      "verification_status": "confirmed — per-file glyph coverage re-verified 2026-08-30 with fontTools 4.63: every character rendered by each of the five HTML files exists in the embedded font cmap (missing=0 per file: proposal.html 927/927, proposal.zh.html 927/927, proposal.en.html 95/95, index.html 674/674, index.en.html 85/85 non-ASCII chars; ASCII and NBSP covered). The embedded family is declared first in every font-family stack, so rendering does not depend on system fonts on the reviewing machine; font structure verified (glyf=maxp=986 glyphs, real outlines)."
     },
     {
       "id": "FONT-MSYH",
