@@ -17,6 +17,11 @@
   "generated_at": "2026-08-24T00:00:00Z",
   "files": [
     {
+      "path": "manifest.json",
+      "role": "manifest",
+      "required": true
+    },
+    {
       "path": "agent.json",
       "sha256": "01d8986df21b1e6df4bf7736e7577bbf0f1dd58737b414d20844f6cdb4902287",
       "role": "agent_card",
@@ -224,12 +229,14 @@
       "path": "report/copyright_statement.md",
       "sha256": "b43d7f32551b1eb5cd186c13928f55a2faf34bb8512e5619248c52306aa3aba7",
       "role": "copyright_statement",
+      "language": "zh",
       "required": true
     },
     {
       "path": "report/narrative.md",
       "sha256": "676ac18fb1f7e0abb46bc1ce62b4c45c557644cae4b47f4dfbd397b257141129",
       "role": "narrative",
+      "language": "zh",
       "required": false
     },
     {
@@ -242,7 +249,7 @@
     },
     {
       "path": "report/proposal.html",
-      "sha256": "44de792fe92fd7e4d3caea963c1b8b68cd0b7778111069c9f5724de2235b80c3",
+      "sha256": "5909449b681e2cc0518e5636fde038ef445a442c986f199eecebe919db2906a6",
       "role": "rendered_proposal_html",
       "language": "zh",
       "required": true
@@ -263,7 +270,7 @@
     },
     {
       "path": "sources.json",
-      "sha256": "115068af6ac4ca49155c466ca1242a8d00e73a99205d7bfff2890676a313b20e",
+      "sha256": "81169ad0fb533effe4b257523b24fa05b41f44131cd2e6ae1a2de45070057018",
       "role": "sources",
       "required": true
     },
@@ -276,110 +283,109 @@
     {
       "path": "visual/assets/font-noto-400.css",
       "sha256": "c14ee11678a120cb9649b41b9acd8180e7011c62012b49175f5be7db27d22b72",
+      "role": "other",
       "role_detail": "embedded_font_stylesheet",
-      "required": true,
-      "role": "other"
+      "required": true
     },
     {
       "path": "visual/assets/font-noto-500.css",
       "sha256": "20a7d3bdc5b80a866a9d9aa67e74f4b7265ca95a794d2f746172d03f5514428f",
+      "role": "other",
       "role_detail": "embedded_font_stylesheet",
-      "required": true,
-      "role": "other"
+      "required": true
     },
     {
       "path": "visual/assets/font-noto-700.css",
       "sha256": "2978d302ece6314fb50960d7949789f4328da23f8efb3462fdca6f4da2729aea",
+      "role": "other",
       "role_detail": "embedded_font_stylesheet",
-      "required": true,
-      "role": "other"
+      "required": true
     },
     {
       "path": "visual/assets/previews/html-en-report.png",
       "sha256": "473071b271922a335204eddb0b7c0416b98046981c5d859ddb1b13308375e4fb",
-      "role_detail": "visual_raster_asset",
+      "role": "other",
       "language": "neutral",
-      "required": false,
-      "role": "other"
+      "role_detail": "visual_raster_asset",
+      "required": false
     },
     {
       "path": "visual/assets/previews/html-en-visual.png",
       "sha256": "c0eec1649e97287bb770c0e58b4374756139620c72852edbe948a0054cc0a7dd",
-      "role_detail": "visual_raster_asset",
+      "role": "other",
       "language": "neutral",
-      "required": false,
-      "role": "other"
+      "role_detail": "visual_raster_asset",
+      "required": false
     },
     {
       "path": "visual/assets/previews/html-zh-report.png",
       "sha256": "f4f8c53c20ed0124fae969d1841982b68a8d1b4c641f290a5bd55457d63fef8b",
-      "role_detail": "visual_raster_asset",
+      "role": "other",
       "language": "neutral",
-      "required": false,
-      "role": "other"
+      "role_detail": "visual_raster_asset",
+      "required": false
     },
     {
       "path": "visual/assets/previews/html-zh-visual.png",
       "sha256": "803ec9632ed95fbf87d8b396a51585afaf8e84ea023fe3f6c60b7da7430e52b5",
-      "role_detail": "visual_raster_asset",
+      "role": "other",
       "language": "neutral",
-      "required": false,
-      "role": "other"
+      "role_detail": "visual_raster_asset",
+      "required": false
     },
     {
       "path": "visual/assets/qa-proofing-record.json",
       "sha256": "686060fff528794a1685a8b9b5671aefb1c82e73e81244ae109a34bd68e8e12f",
-      "role_detail": "visual_structure_data",
+      "role": "other",
       "language": "neutral",
-      "required": false,
-      "role": "other"
+      "role_detail": "visual_structure_data",
+      "required": false
     },
     {
       "path": "visual/assets/rendered-preview/html-en-1.png",
       "sha256": "473071b271922a335204eddb0b7c0416b98046981c5d859ddb1b13308375e4fb",
+      "role": "other",
+      "language": "zh",
       "role_detail": "visual_raster_asset",
-      "required": true,
-      "role": "other"
+      "required": true
     },
     {
       "path": "visual/assets/rendered-preview/html-en-2.png",
       "sha256": "c0eec1649e97287bb770c0e58b4374756139620c72852edbe948a0054cc0a7dd",
+      "role": "other",
+      "language": "zh",
       "role_detail": "visual_raster_asset",
-      "required": true,
-      "role": "other"
+      "required": true
     },
     {
       "path": "visual/assets/rendered-preview/html-zh-1.png",
       "sha256": "f4f8c53c20ed0124fae969d1841982b68a8d1b4c641f290a5bd55457d63fef8b",
+      "role": "other",
+      "language": "zh",
       "role_detail": "visual_raster_asset",
-      "required": true,
-      "role": "other"
+      "required": true
     },
     {
       "path": "visual/assets/rendered-preview/html-zh-2.png",
       "sha256": "803ec9632ed95fbf87d8b396a51585afaf8e84ea023fe3f6c60b7da7430e52b5",
+      "role": "other",
+      "language": "zh",
       "role_detail": "visual_raster_asset",
-      "required": true,
-      "role": "other"
+      "required": true
     },
     {
       "path": "visual/index.en.html",
       "sha256": "d0e312cf9ba1c27c3fadb18457b6cf803c4c04a00d79d3f33dfb30e6aa1ed8fd",
+      "role": "visualization",
       "language": "en",
       "translation_of": "visual/index.html",
-      "required": true,
-      "role": "visualization"
+      "required": true
     },
     {
       "path": "visual/index.html",
-      "sha256": "c9cfea639669f0f00e018bdce9e11ba3057fa49c6135271859d9727cf74f3288",
+      "sha256": "a20a48f8e7e4e7b57b964047049e7b085c51c8ff6e3cfc3fb787c0fad6e736f2",
+      "role": "visualization",
       "language": "zh",
-      "required": true,
-      "role": "visualization"
-    },
-    {
-      "path": "manifest.json",
-      "role": "manifest",
       "required": true
     }
   ],

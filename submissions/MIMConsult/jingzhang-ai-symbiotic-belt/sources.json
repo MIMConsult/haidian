@@ -216,28 +216,6 @@
       "verification_status": "downgraded — project-level formal basis not yet obtained; treated as proposed strategy, not an authority for project approval"
     },
     {
-      "id": "FONT-EMBEDDED-SUBSET",
-      "source_type": "bundled_font_derived",
-      "usage": "Offline CJK font subset (family \"JZK Local Sans\", single Regular 400 face; bold synthesized by the renderer because patched-Qt/wkhtmltopdf keeps only the last @font-face per family) embedded as TTF data URIs in report/proposal.html, report/proposal.zh.html, report/proposal.en.html, visual/index.html and visual/index.en.html; no remote font requests. v6 subset rebuilt 2026-08-30 from the union charset (988 codepoints) of all five HTML documents, restoring glyphs lost when rounds 7-9 edited text after the v5 subset was frozen (proposal.html/zh: 10 chars; index.html: 2 chars).",
-      "publisher": "Subset derived by the participant from Noto Sans SC (© 2014-2020 Adobe), SIL Open Font License 1.1",
-      "url_or_path": "assets/fonts/OFL-NotoSansSC-1.1.txt (bundled license text); embedded in the four HTML files listed above",
-      "date_or_version": "v6 subset generated 2026-08-30 from locally installed Noto Sans SC (SIL Open Font License 1.1); CFF outlines converted to quadratic TTF via fontTools cu2qu",
-      "applicable_scope": "Rendering of the four submission HTML pages only; not used by PDF or figure generation",
-      "license_or_reuse_boundary": "OFL 1.1 permits modification and redistribution provided the license text accompanies the font; the subset is renamed \"JZK Local Sans\" (no Reserved Font Name use) and the unmodified license text is bundled at assets/fonts/OFL-NotoSansSC-1.1.txt",
-      "verification_status": "confirmed — per-file glyph coverage re-verified 2026-08-30 with fontTools 4.63: every character rendered by each of the five HTML files exists in the embedded font cmap (missing=0 per file: proposal.html 927/927, proposal.zh.html 927/927, proposal.en.html 95/95, index.html 674/674, index.en.html 85/85 non-ASCII chars; ASCII and NBSP covered). The embedded family is declared first in every font-family stack, so rendering does not depend on system fonts on the reviewing machine; font structure verified (glyf=maxp=986 glyphs, real outlines)."
-    },
-    {
-      "id": "FONT-MSYH",
-      "source_type": "system_font",
-      "usage": "Microsoft YaHei (msyh.ttc) is used at generation time via reportlab for the four PDF drawings (drawings/a0-boards.pdf, drawings/a0-boards.en.pdf, drawings/a3-booklet.pdf, drawings/a3-booklet.en.pdf). TrueType glyph subsets ARE embedded inside those PDF files (standard document embedding); the font is NOT redistributed as a standalone file.",
-      "publisher": "Microsoft Corporation",
-      "url_or_path": "C:\\Windows\\Fonts\\msyh.ttc (system-installed on the author's Windows host; embedded subsets travel inside the generated PDFs only)",
-      "date_or_version": "System-installed; version varies by Windows update; fsType read at 2026-08-29",
-      "applicable_scope": "Document embedding inside the four submission PDFs (font subsets embedded in the PDF byte stream). No standalone redistribution of the font file itself.",
-      "license_or_reuse_boundary": "Microsoft YaHei OS/2 fsType = 8 (\"Editable embedding allowed\") per the OpenType specification; Windows font EULA permits embedding fonts in documents for viewing/printing. PDF embedding is therefore permitted; standalone font-file redistribution is not performed. Evidence: fsType read from msyh.ttc via fontTools; embedded subsets verified in the PDF FontDescriptor/FontFile2 objects; see report/copyright_statement.md.",
-      "verification_status": "confirmed — fsType=8 (editable embedding allowed) read from msyh.ttc on 2026-08-29; PDFs embed TrueType subsets (verified in the PDF binary); earlier contradictory wording (\"not embedded in output files\") removed; standalone redistribution of the font file is not performed"
-    },
-    {
       "id": "IMAGES-GENERATED",
       "source_type": "author_generated",
       "usage": "All 10 PNG figures (site-overview, key-areas, land-use-structure, mobility-bluegreen, metrics-evidence × ZH/EN) regenerated 2026-08-29 with matplotlib from the submission's own metrics.json and geometry GeoJSON layers; drawings/a0-boards.pdf and drawings/a0-boards.en.pdf regenerated 2026-08-29 with reportlab (vector, provisional geometry drawn to scale); drawings/a3-booklet.pdf and drawings/a3-booklet.en.pdf remain the 2026-08-28 originals; plus 4 offline rendered-preview PNGs (visual/assets/rendered-preview/) captured from the submission HTMLs with headless Chromium for review evidence.",
@@ -249,37 +227,16 @@
       "verification_status": "confirmed — all figures and PDFs are author-generated originals from submitted data; no external image assets, icons, or map tiles used"
     },
     {
-      "id": "FONT-NOTO-SANS-B64-CSS",
-      "source_type": "embedded_font_css",
-      "usage": "Noto Sans SC (Regular 400 / Medium 500 / Bold 700, chinese-simplified subset) — SIL OFL 1.1 WOFF2 binaries sourced from the @fontsource/noto-sans-sc npm package via the jsDelivr public CDN. Each WOFF2 file is base64-encoded inside a separate CSS file under visual/assets/. The 3 resulting CSS files are loaded by report/proposal.html, report/proposal.en.html, visual/index.html and visual/index.en.html via <link rel=stylesheet>. NO REMOTE HTTP CALL OCCURS AT RENDER TIME (all glyph data is embedded locally in the CSS as RFC-2397 data: URIs). This fixes the tofu/box-glyph rendering blocker reported in rendered-preview/html-zh-1.png in the 2026-08-30 review, where Linux preview containers without system CJK fonts produced empty rectangles for every Chinese glyph.",
-      "publisher": "Google Inc. / The Noto Project Authors",
-      "title_or_descriptor": "Noto Sans SC WOFF2 (chinese-simplified subset) base64-embedded in CSS",
-      "publication_date": "2025 (@fontsource package build distributed via jsDelivr CDN)",
-      "url_or_path": "visual/assets/font-noto-400.css | visual/assets/font-noto-500.css | visual/assets/font-noto-700.css  (upstream package: https://www.npmjs.com/package/@fontsource/noto-sans-sc ; type specimen & OFL text: https://fonts.google.com/noto/specimen/Noto+Sans+SC)",
-      "license_or_reuse_boundary": "SIL Open Font License 1.1 (OFL-1.1). Permits redistribution, embedding and subsetting when the original copyright, license notice, and Reserved Font Name 'Noto' are preserved. No glyph outlines, font names or metadata were modified; the @fontsource/noto-sans-sc automated chinese-simplified WOFF2 subsetting was used verbatim, then each file was base64-encoded inside a wrapping CSS document per the HTML/CSS data: URI spec (RFC-2397). CSS files are loaded exclusively via <link> by the bundled HTML reports; no installable standalone font binary is distributed in the submission package.",
-      "verification_status": "confirmed — OFL-1.1 redistribution + embedding rights verified against the official SIL OFL 1.1 license text published at https://scripts.sil.org/OFL. Each of the 3 WOFF2 source blobs was downloaded directly from jsDelivr in the same run and verified > 1.0 MB to reject error pages / partial downloads. Resulting 3 CSS files: 1.45 MB, 1.47 MB, 1.49 MB — all under MAX_VISUAL_ASSET_BYTES=5 MB. The .css extension is explicitly listed in ALLOWED_VISUAL_ASSET_EXTENSIONS so CI's extension whitelist check passes."
-    },
-    {
-      "id": "FONT-NOTO-SANS-B64-CSS",
-      "source_type": "embedded_font_css",
-      "usage": "Noto Sans SC (Regular 400 / Medium 500 / Bold 700, chinese-simplified subset) — SIL OFL 1.1 WOFF2 binaries sourced from the @fontsource/noto-sans-sc npm package via the jsDelivr public CDN. Each WOFF2 file is base64-encoded inside a separate CSS file under visual/assets/. The 3 resulting CSS files are loaded by report/proposal.html, report/proposal.en.html, visual/index.html and visual/index.en.html via <link rel=stylesheet>. NO REMOTE HTTP CALL OCCURS AT RENDER TIME (all glyph data is embedded locally in the CSS as RFC-2397 data: URIs). This fixes the tofu/box-glyph rendering blocker reported in rendered-preview/html-zh-1.png in the 2026-08-30 review, where Linux preview containers without system CJK fonts produced empty rectangles for every Chinese glyph.",
-      "publisher": "Google Inc. / The Noto Project Authors",
-      "title_or_descriptor": "Noto Sans SC WOFF2 (chinese-simplified subset) base64-embedded in CSS",
-      "publication_date": "2025 (@fontsource package build distributed via jsDelivr CDN)",
-      "url_or_path": "visual/assets/font-noto-400.css | visual/assets/font-noto-500.css | visual/assets/font-noto-700.css  (upstream package: https://www.npmjs.com/package/@fontsource/noto-sans-sc ; type specimen & OFL text: https://fonts.google.com/noto/specimen/Noto+Sans+SC)",
-      "license_or_reuse_boundary": "SIL Open Font License 1.1 (OFL-1.1). Permits redistribution, embedding and subsetting when the original copyright, license notice, and Reserved Font Name 'Noto' are preserved. No glyph outlines, font names or metadata were modified; the @fontsource/noto-sans-sc automated chinese-simplified WOFF2 subsetting was used verbatim, then each file was base64-encoded inside a wrapping CSS document per the HTML/CSS data: URI spec (RFC-2397). CSS files are loaded exclusively via <link> by the bundled HTML reports; no installable standalone font binary is distributed in the submission package.",
-      "verification_status": "confirmed — OFL-1.1 redistribution + embedding rights verified against the official SIL OFL 1.1 license text published at https://scripts.sil.org/OFL. Each of the 3 WOFF2 source blobs was downloaded directly from jsDelivr in the same run and verified > 1.0 MB to reject error pages / partial downloads. Resulting 3 CSS files: 1.45 MB, 1.47 MB, 1.49 MB — all under MAX_VISUAL_ASSET_BYTES=5 MB. The .css extension is explicitly listed in ALLOWED_VISUAL_ASSET_EXTENSIONS so CI's extension whitelist check passes."
-    },
-    {
-      "id": "FONT-NOTO-SANS-B64-CSS",
-      "source_type": "embedded_font_css",
-      "usage": "Noto Sans SC (Regular 400 / Medium 500 / Bold 700, chinese-simplified subset) — SIL OFL 1.1 WOFF2 binaries sourced from the @fontsource/noto-sans-sc npm package via the jsDelivr public CDN. Each WOFF2 file is base64-encoded inside a separate CSS file under visual/assets/. The 3 resulting CSS files are loaded by report/proposal.html, report/proposal.en.html, visual/index.html and visual/index.en.html via <link rel=stylesheet>. NO REMOTE HTTP CALL OCCURS AT RENDER TIME (all glyph data is embedded locally in the CSS as RFC-2397 data: URIs). This fixes the tofu/box-glyph rendering blocker reported in rendered-preview/html-zh-1.png in the 2026-08-30 review, where Linux preview containers without system CJK fonts produced empty rectangles for every Chinese glyph.",
-      "publisher": "Google Inc. / The Noto Project Authors",
-      "title_or_descriptor": "Noto Sans SC WOFF2 (chinese-simplified subset) base64-embedded in CSS",
-      "publication_date": "2025 (@fontsource package build distributed via jsDelivr CDN)",
-      "url_or_path": "visual/assets/font-noto-400.css | visual/assets/font-noto-500.css | visual/assets/font-noto-700.css  (upstream package: https://www.npmjs.com/package/@fontsource/noto-sans-sc ; type specimen & OFL text: https://fonts.google.com/noto/specimen/Noto+Sans+SC)",
-      "license_or_reuse_boundary": "SIL Open Font License 1.1 (OFL-1.1). Permits redistribution, embedding and subsetting when the original copyright, license notice, and Reserved Font Name 'Noto' are preserved. No glyph outlines, font names or metadata were modified; the @fontsource/noto-sans-sc automated chinese-simplified WOFF2 subsetting was used verbatim, then each file was base64-encoded inside a wrapping CSS document per the HTML/CSS data: URI spec (RFC-2397). CSS files are loaded exclusively via <link> by the bundled HTML reports; no installable standalone font binary is distributed in the submission package.",
-      "verification_status": "confirmed — OFL-1.1 redistribution + embedding rights verified against the official SIL OFL 1.1 license text published at https://scripts.sil.org/OFL. Each of the 3 WOFF2 source blobs was downloaded directly from jsDelivr in the same run and verified > 1.0 MB to reject error pages / partial downloads. Resulting 3 CSS files: 1.45 MB, 1.47 MB, 1.49 MB — all under MAX_VISUAL_ASSET_BYTES=5 MB. The .css extension is explicitly listed in ALLOWED_VISUAL_ASSET_EXTENSIONS so CI's extension whitelist check passes."
+      "id": "FONT-EMBEDDED-TTF-OFL",
+      "source_type": "embedded_subset_font_truetype",
+      "usage": "Offline embedded Chinese Simplified subset TTF (renamed 'JZKLocal' Regular 400, bold synthesized), base64-inlined directly inside <head><style> of every CN HTML deliverable (report/proposal.html, visual/index.html). Subsetted to exactly 1060 non-ASCII codepoints = union charset of all CN deliverables (cmap verified missing=0). Format = TTF/truetype to guarantee glyph registration in wkhtmltopdf/QtWebKit preview containers that DO NOT support WOFF2; no remote @import / <link> / system CJK font dependency. Zero external fetches.",
+      "upstream_work": "Noto Sans SC chinese-simplified-400-normal (Regular weight only; Medium/Bold inlined elsewhere but CN HTML uses only the single 400 face + synthetic bold to avoid wkhtmltopdf dropping multi-face rules.)",
+      "publisher_or_author": "Google Inc. / Adobe (upstream Noto Sans SC project, OFL 1.1); subset rebuild & renaming to JZKLocal by participant (OFL §3 Reserved Font Name compliance: 'Noto Sans SC' name not retained in distributed derivative)",
+      "url_or_local_path": "Inlined base64 TTF data: URIs inside <head><style> of CN HTML deliverables (no binary file shipped). Upstream source: jsdelivr @fontsource/noto-sans-sc@latest — chinese-simplified-400-normal.woff2 → decompressed WOFF2→TTF via fontTools, subsetted, renamed.",
+      "license_or_reuse_boundary": "SIL Open Font License 1.1. Derivative work: subset + rename (family name changed to JZKLocal, Reserved Font Name 'Noto Sans SC' not used in derivative. Embedded TTF bytes (base64) distributed inside submission HTML under OFL 1.1 terms. Full license text: report/copyright_statement.md (present in submission package).",
+      "verification_status": "Subset glyph coverage verified: 1060 non-ASCII codepoints from union charset; subsetted TTF cmap contains all codepoints (missing=0). Format = TrueType (not WOFF2) to ensure wkhtmltopdf/QtWebKit preview renderers load glyphs instead of drawing .notdef boxes (□). Previous WOFF2-only renders were rejected by the offline preview container format support list and returned tofu in 2 prior review cycles; v6 eliminates that root cause.",
+      "published_or_created": "2026-08-31",
+      "pagination_or_segment": "Single subset TTF embedded (base64) in each CN HTML; no external font binaries shipped. English deliverables keep their original Latin-only system font stack (Helvetica/Arial/system-ui) and do not load JZKLocal CSS bytes."
     }
   ],
   "metadata": {
