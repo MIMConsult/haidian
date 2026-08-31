@@ -249,7 +249,7 @@
     },
     {
       "path": "report/proposal.html",
-      "sha256": "5909449b681e2cc0518e5636fde038ef445a442c986f199eecebe919db2906a6",
+      "sha256": "fad246114e7e8f659726cb207288be926e34537b27f3b657bff13f3f26fecfe5",
       "role": "rendered_proposal_html",
       "language": "zh",
       "required": true
@@ -383,7 +383,7 @@
     },
     {
       "path": "visual/index.html",
-      "sha256": "a20a48f8e7e4e7b57b964047049e7b085c51c8ff6e3cfc3fb787c0fad6e736f2",
+      "sha256": "9b28de4af3494d00a1eb8516aad7a2dbdbff74323811c0701ae69132fea3ea65",
       "role": "visualization",
       "language": "zh",
       "required": true
